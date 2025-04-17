@@ -1,0 +1,228 @@
+/* Estilos Generales del Formulario de Contacto */
+.contact-page {
+    background-color: var(--background-color);
+    padding: 2rem 0;
+    padding-top: calc(2rem + 80px); /* Altura del header + padding extra */
+    min-height: 100vh;
+}
+
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    text-align: center;
+    color: #ff4d4d;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+/* Formulario */
+.contact-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--shadow-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff4d4d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+    border-color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Validación en tiempo real */
+.form-group input:valid,
+.form-group select:valid,
+.form-group textarea:valid {
+    border-color: #2ecc71;
+}
+
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+    border-color: #e74c3c;
+}
+
+.error-message {
+    display: none;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.form-group input:invalid ~ .error-message,
+.form-group select:invalid ~ .error-message,
+.form-group textarea:invalid ~ .error-message {
+    display: block;
+}
+
+/* Color de fondo para area de input/select/textarea*/
+
+.input-area{
+    background-color: var(--shadow-color);
+    color: var(--text-color);
+}
+
+/* Estilos para selectores en modo oscuro */
+select {
+    background-color: var(--shadow-color);
+    color: var(--text-color);
+    border: 1px solid var(--shadow-color);
+}
+
+/* Estilos para las opciones de los selectores */
+select option {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* Estilos para labels de optgroup */
+select optgroup {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Botón de Envío */
+.submit-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:focus-visible {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.3);
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.submit-btn:hover {
+    background-color: #ff6b6b;
+}
+
+.submit-btn .spinner {
+    display: none;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid var(--shadow-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+.submit-btn.loading .btn-text {
+    opacity: 0.5;
+}
+
+.submit-btn.loading .spinner {
+    display: block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Modal de Confirmación */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal-close-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitpro - Clases</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/classes.css">
+  <link rel="stylesheet" href="../css/card-classes.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="../index.html">
+          <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+            <g class="logo-barbell">
+              <!-- Barra central -->
+              <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
+
+              <!-- Disco izquierdo -->
+              <g transform="translate(5, 0)">
+                <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
+                <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                  stroke-width="2" />
+              </g>
+
+              <!-- Disco derecho -->
+              <g transform="translate(-5, 0)">
+                <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
+                <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                  stroke-width="2" />
+              </g>
+            </g>
+          </svg>
+          FITPRO
+        </a>
+      </h1>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#" class="menu-trigger">Menú</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-section">
+                  <h3>Clases</h3>
+                  <ul>
+                    <li><a href="classes.html">Ver Todas las Clases</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-section">
+                  <h3>Entrenadores</h3>
+                  <ul>
+                    <li><a href="trainers.html">Nuestro Equipo</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-section">
+                  <h3>Precios</h3>
+                  <ul>
+                    <li><a href="pricing.html">Planes y Membresías</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-section">
+                  <h3>Unirme Ahora</h3>
+                  <ul>
+                    <li><a href="contact.html">Contacto</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-section">
+                  <h3>Blog</h3>
+                  <ul>
+                    <li><a href="blog.html">Blog de Fitness</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="classes-page">
+    <section class="classes-section">
+      <h1 class="section-title">NUESTRAS CLASES</h1>
+
+      <input type="radio" name="category" id="todos" class="filter-input" checked tabindex="0">
+      <input type="radio" name="category" id="musculacion" class="filter-input" tabindex="0">
+      <input type="radio" name="category" id="crossfit" class="filter-input" tabindex="0">
+      <input type="radio" name="category" id="yoga" class="filter-input" tabindex="0">
+      <input type="radio" name="category" id="spinning" class="filter-input" tabindex="0">
+
+      <!-- Filtros -->
+      <div class="classes-filters ">
+        <label for="todos" class="filter-label" tabindex="0">Todas</label>
+        <label for="musculacion" class="filter-label" tabindex="0">Musculación</label>
+        <label for="crossfit" class="filter-label" tabindex="0">CrossFit</label>
+        <label for="yoga" class="filter-label" tabindex="0">Yoga</label>
+        <label for="spinning" class="filter-label" tabindex="0">Spinning</label>
+      </div>
+
+      <!-- Galería de Clases -->
+      <div class="classes-gallery">
+        <div class="class-card musculacion" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/musculación.jpeg" alt="Musculación">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>MUSCULACION</h3>
+              <p>Hipertrofia muscular con los mejores entrenadores del país.</p>
+              <p>Horario: 19:00 - 21:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card musculacion" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/musculacion-avanzada.jpg" alt="Musculación">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>MUSCULACION</h3>
+              <p>Levantá pesado con los mejores entrenadores del país.</p>
+              <p>Horario: 8:00 - 12:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card crossfit" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/crossfit.jpg" alt="CrossFit">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>CROSSFIT</h3>
+              <p>Entrenamos el cuerpo con las mejores actividades.</p>
+              <p>Horario: Martes, Jueves y Sabados de 8:00 a 10:00 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card crossfit" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/crossfit-avanzado.jpg" alt="CrossFit">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>CROSSFIT</h3>
+              <p>LLevamos el cuerpo al máximo.</p>
+              <p>Horario: Lunes, Miercoles y Jueves de 19:00 a 21:00 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card yoga" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/yoga.jpeg" alt="Yoga">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>YOGA</h3>
+              <p>Entrena cuerpo y mente.</p>
+              <p>Horario: Lunes, Miercoles y Viernes de 10:00 a 13:00 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card yoga" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/yoga-en-pareja.jpg" alt="Yoga">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>YOGA</h3>
+              <p>Entrena cuerpo, mente y fortalece tus relaciones.</p>
+              <p>Horario: Martes, Jueves y Sabado de 21:00 a 23:00 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card spinning" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/spinning.jpg" alt="Spinning">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>SPINNING</h3>
+              <p>Cardio de alta energía en bicicletas estáticas</p>
+              <p>Horario: Martes, Jueves y Sabado de 10:00 a 13:00 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card spinning" tabindex="0">
+          <div class="class-image">
+            <img src="../assets/images/clases/spinning2.jpg" alt="Spinning">
+            <div class="class-overlay"></div>
+            <div class="class-content">
+              <h3>SPINNING</h3>
+              <p>Cardio de alta energía en bicicletas estáticas</p>
+              <p>Horario: Lunes, Miercoles y Viernes de 21:00 a 23:00 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horarios Semanales -->
+    <section class="schedule-section">
+      <h2 class="section-title">HORARIOS SEMANALES</h2>
+      <div class="schedule-table-container">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:00</td>
+              <td class="class-musculacion">Musculación</td>
+              <td class="class-crossfit">CrossFit</td>
+              <td class="class-musculacion">Musculación</td>
+              <td class="class-crossfit">CrossFit</td>
+              <td class="class-musculacion">Musculación</td>
+              <td class="class-crossfit">CrossFit</td>
+            </tr>
+            <tr>
+              <td>10:00</td>
+              <td class="class-yoga">Yoga</td>
+              <td class="class-spinning">Spinning</td>
+              <td class="class-yoga">Yoga</td>
+              <td class="class-spinning">Spinning</td>
+              <td class="class-yoga">Yoga</td>
+              <td class="class-spinning">Spinning</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td class="class-crossfit">CrossFit</td>
+              <td class="class-musculacion">Musculación</td>
+              <td class="class-crossfit">CrossFit</td>
+              <td class="class-musculacion">Musculación</td>
+              <td class="class-crossfit">CrossFit</td>
+              <td class="class-musculacion">Musculación</td>
+            </tr>
+            <tr>
+              <td>21:00</td>
+              <td class="class-spinning">Spinning</td>
+              <td class="class-yoga">Yoga</td>
+              <td class="class-spinning">Spinning</td>
+              <td class="class-yoga">Yoga</td>
+              <td class="class-spinning">Spinning</td>
+              <td class="class-yoga">Yoga</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-grid">
+        <!-- Newsletter Section -->
+        <div class="footer-section">
+          <h3>Suscríbete al Newsletter</h3>
+          <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="Tu correo electrónico" required>
+              <button type="submit">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact & Social Section -->
+        <div class="footer-section">
+          <h3>Síguenos en Redes</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
+            <p><i class="fas fa-envelope"></i> info@gymtop.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="footer-section map-section">
+          <h3>Encóntranos</h3>
+          <div class="map-container">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
+              width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="js/newsletter.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="../js/darkmode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+/* Estilos Generales de Página de Precios */
+.pricing-page {
+    background-color: var(--background-color);
+    padding-top: calc(2rem + 80px);
+    min-height: 100vh;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pricing-header h1 {
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+}
+
+/* Toggle de Precios */
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--shadow-color);
+    border-radius: 30px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.pricing-toggle input {
+    display: none;
+}
+
+.pricing-toggle label {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+.pricing-toggle input:checked + label {
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 30px;
+}
+
+/* Planes de Precios */
+.pricing-plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plan {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.plan.recommended {
+    border: 2px solid #ff4d4d;
+}
+
+.plan-inner {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+}
+
+.plan h2 {
+    color: var(--second-color);
+    margin-bottom: 1rem;
+}
+
+.plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4d4d;
+    margin-bottom: 1.5rem;
+}
+
+.plan-features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.plan-features li {
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-features li i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.plan-features li .fa-check {
+    color: #2ecc71;
+}
+
+.plan-features li .fa-times {
+    color: #e74c3c;
+}
+
+/* Tooltips */
+.plan-features li .tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.plan-features li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.plan-cta {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.plan-cta:hover {
+    background-color: #ff6b6b;
+}
+
+/* Mostrar/Ocultar Precios */
+.annual-price {
+    display: none;
+}
+
+input#annual:checked ~ .pricing-plans .plan .annual-price,
+input#monthly:checked ~ .pricing-plans .plan .monthly-price {
+    display: block;
+}
+
+input#annual:checked ~ .pricing-plans .plan .monthly-price,
+input#monthly:checked ~ .pricing-plans .plan .annual-price {
+    display: none;
+}
+
+/* Estilos para la etiqueta Popular */
+.plan-badge {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-plans {
+        grid-template-columns: 1fr;
+    }
+}

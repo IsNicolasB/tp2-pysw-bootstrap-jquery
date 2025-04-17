@@ -1,0 +1,238 @@
+/* Sección de Entrenadores */
+.trainers-page {
+    background-color: var(--background-color);
+    padding: 2rem 0;
+    padding-top: 6rem;
+}
+
+.trainers-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 2rem;
+}
+
+/* Tarjetas de Entrenadores */
+.trainer-card {
+    height: 450px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.trainer-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.trainer-card:hover .trainer-card-inner {
+    transform: rotateY(180deg);
+}
+
+.trainer-card-front,
+.trainer-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-color);
+    overflow: hidden;
+}
+
+.trainer-card-front {
+    justify-content: flex-start;
+}
+
+.trainer-card-front img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.trainer-card-front h3,
+.trainer-card-front p {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #ff4d4d;
+    text-align: center;
+}
+
+.trainer-card-back {
+    transform: rotateY(180deg);
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.trainer-card-back h3 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.trainer-card-back p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.trainer-skills {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Estilos de Focus para Tarjetas de Entrenadores */
+.trainer-card:focus-visible,
+.trainer-card:focus-within {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 5px;
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Focus para el contenido interno de la tarjeta */
+.trainer-card:focus-within .trainer-info,
+.trainer-card:focus-within .trainer-skills {
+    opacity: 0.9;
+}
+
+/* Estilos de Focus para Botones de Entrenadores */
+.trainer-social-links a:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+    transform: scale(1.2);
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+/* Barras de Habilidades */
+.skill {
+    margin-bottom: 0.5rem;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #ff4d4d;
+    border-radius: 5px;
+    width: 0; /* Inicialmente sin ancho */
+    transition: width 1s ease-out;
+}
+
+/* Activar animación solo cuando la tarjeta está completamente girada */
+.trainer-card:hover .trainer-card-back .skill-level {
+    width: 100%;
+}
+
+/* Estilos específicos para cada habilidad */
+.trainer-card:nth-child(1) .skill:nth-child(1) .skill-level {
+    transition-delay: 0.2s;
+    max-width: 90%;
+}
+
+.trainer-card:nth-child(1) .skill:nth-child(2) .skill-level {
+    transition-delay: 0.4s;
+    max-width: 85%;
+}
+
+.trainer-card:nth-child(2) .skill:nth-child(1) .skill-level {
+    transition-delay: 0.2s;
+    max-width: 95%;
+}
+
+.trainer-card:nth-child(2) .skill:nth-child(2) .skill-level {
+    transition-delay: 0.4s;
+    max-width: 80%;
+}
+
+.trainer-card:nth-child(3) .skill:nth-child(1) .skill-level {
+    transition-delay: 0.2s;
+    max-width: 95%;
+}
+
+.trainer-card:nth-child(3) .skill:nth-child(2) .skill-level {
+    transition-delay: 0.4s;
+    max-width: 90%;
+}
+
+/* Sistema de Rating */
+.trainer-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.trainer-rating input {
+    display: none;
+}
+
+.trainer-rating label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ccc"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>') no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    order: 5; /* Cambio para evaluar de izquierda a derecha */
+}
+
+.trainer-rating input[value="1"] { order: 1; }
+.trainer-rating input[value="2"] { order: 2; }
+.trainer-rating input[value="3"] { order: 3; }
+.trainer-rating input[value="4"] { order: 4; }
+.trainer-rating input[value="5"] { order: 5; }
+
+.trainer-rating label[for$="-1"] { order: 1; }
+.trainer-rating label[for$="-2"] { order: 2; }
+.trainer-rating label[for$="-3"] { order: 3; }
+.trainer-rating label[for$="-4"] { order: 4; }
+.trainer-rating label[for$="-5"] { order: 5; }
+
+.trainer-rating input:checked ~ label {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff4d4d"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>') no-repeat center;
+    background-size: cover;
+}
+
+.trainer-rating input:checked ~ label:hover,
+.trainer-rating label:hover {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff1a1a"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>') no-repeat center;
+    background-size: cover;
+}
+
+/* Lógica de rating de izquierda a derecha */
+.trainer-rating input:checked ~ input:checked {
+    opacity: 0.5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .trainers-grid {
+        grid-template-columns: 1fr;
+    }
+}

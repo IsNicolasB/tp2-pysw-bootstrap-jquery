@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitpro - Planes y Precios</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+          <h1 class="logo">
+            <a href="../index.html">
+              <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                <g class="logo-barbell">
+                  <!-- Barra central -->
+                  <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
+    
+                  <!-- Disco izquierdo -->
+                  <g transform="translate(5, 0)">
+                    <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
+                    <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                      stroke-width="2" />
+                  </g>
+    
+                  <!-- Disco derecho -->
+                  <g transform="translate(-5, 0)">
+                    <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
+                    <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                      stroke-width="2" />
+                  </g>
+                </g>
+              </svg>
+              FITPRO
+            </a>
+          </h1>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#" class="menu-trigger">Menú</a>
+                <div class="mega-menu">
+                  <div class="mega-menu-content">
+                    <div class="mega-menu-section">
+                      <h3>Clases</h3>
+                      <ul>
+                        <li><a href="classes.html">Ver Todas las Clases</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                      <h3>Entrenadores</h3>
+                      <ul>
+                        <li><a href="trainers.html">Nuestro Equipo</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                      <h3>Precios</h3>
+                      <ul>
+                        <li><a href="pricing.html">Planes y Membresías</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                      <h3>Unirme Ahora</h3>
+                      <ul>
+                        <li><a href="contact.html">Contacto</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                      <h3>Blog</h3>
+                      <ul>
+                        <li><a href="blog.html">Blog de Fitness</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+    <main class="pricing-page">
+        <section class="pricing-header">
+            <h1>Elige tu Plan Perfecto</h1>
+            <div class="pricing-toggle">
+                <input type="radio" id="monthly" name="pricing" checked>
+                <label for="monthly">Mensual</label>
+                <input type="radio" id="annual" name="pricing">
+                <label for="annual">Anual</label>
+            </div>
+        </section>
+
+        <section class="pricing-plans" id="planes-mensuales">
+            <div class="plan">
+                <div class="plan-inner">
+                    <h2>Plan Básico</h2>
+                    <div class="plan-price monthly-price">$29.99/mes</div>
+                    <div class="plan-price annual-price">$299.99/año</div>
+                    <ul class="plan-features">
+                        <li>
+                            <i class="fas fa-check"></i> Acceso a Gimnasio
+                            <span class="tooltip">Entrada ilimitada durante horario de atención</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Clases Grupales Básicas
+                            <span class="tooltip">Incluye clases de yoga y stretching</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-times"></i> Entrenador Personal
+                            <span class="tooltip">No incluido en este plan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-times"></i> Nutrición Personalizada
+                            <span class="tooltip">No incluido en este plan</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="plan-cta">COMENZAR</a>
+                </div>
+            </div>
+
+            <div class="plan recommended">
+                <div class="plan-inner">
+                    <div class="plan-badge">Popular</div>
+                    <h2>Plan Premium</h2>
+                    <div class="plan-price monthly-price">$59.99/mes</div>
+                    <div class="plan-price annual-price">$599.99/año</div>
+                    <ul class="plan-features">
+                        <li>
+                            <i class="fas fa-check"></i> Acceso a Gimnasio
+                            <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Todas las Clases Grupales
+                            <span class="tooltip">Incluye CrossFit, Spinning, Yoga, etc.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Entrenador Personal
+                            <span class="tooltip">2 sesiones mensuales con entrenador</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Nutrición Personalizada
+                            <span class="tooltip">Plan nutricional adaptado a tus objetivos</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="plan-cta">COMENZAR</a>
+                </div>
+            </div>
+
+            <div class="plan" >
+                <div class="plan-inner">
+                    <h2>Plan Intensivo</h2>
+                    <div class="plan-price monthly-price">$79.99/mes</div>
+                    <div class="plan-price annual-price">$799.99/año</div>
+                    <ul class="plan-features">
+                        <li>
+                            <i class="fas fa-check"></i> Acceso a Gimnasio
+                            <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Todas las Clases Grupales
+                            <span class="tooltip">Incluye clases especializadas y avanzadas</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Entrenador Personal Ilimitado
+                            <span class="tooltip">Sesiones ilimitadas con entrenadores especializados</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Nutrición y Suplementación
+                            <span class="tooltip">Plan nutricional avanzado y suplementos incluidos</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="plan-cta">COMENZAR</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <!-- Newsletter Section -->
+          <div class="footer-section">
+            <h3>Suscríbete al Newsletter</h3>
+            <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <div class="form-group">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact & Social Section -->
+          <div class="footer-section">
+            <h3>Síguenos en Redes</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
+              <p><i class="fas fa-envelope"></i> info@gymtop.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
+            </div>
+          </div>
+
+          <!-- Map Section -->
+          <div class="footer-section map-section">
+            <h3>Encóntranos</h3>
+            <div class="map-container">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
+                width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/pricing.js"></script>
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/darkmode.js"></script>
+    
+</body>
+
+</html>
