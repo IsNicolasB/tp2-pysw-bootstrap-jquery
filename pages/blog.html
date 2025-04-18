@@ -5,455 +5,449 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitpro - Blog de Fitness</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/blog.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">
-        <a href="../index.html">
-          <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-            <g class="logo-barbell">
-              <!-- Barra central -->
-              <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
 
-              <!-- Disco izquierdo -->
-              <g transform="translate(5, 0)">
-                <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
-                <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
-                  stroke-width="2" />
-              </g>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" width="50" height="30" class="me-2">
+              <g class="logo-barbell">
+                <!-- Barra central -->
+                <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
 
-              <!-- Disco derecho -->
-              <g transform="translate(-5, 0)">
-                <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
-                <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
-                  stroke-width="2" />
+                <!-- Disco izquierdo -->
+                <g transform="translate(5, 0)">
+                  <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
+                  <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                    stroke-width="2" />
+                </g>
+
+                <!-- Disco derecho -->
+                <g transform="translate(-5, 0)">
+                  <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
+                  <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                    stroke-width="2" />
+                </g>
               </g>
-            </g>
-          </svg>
-          FITPRO
-        </a>
-      </h1>
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="#" class="menu-trigger">Menú</a>
-            <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-section">
-                  <h3>Clases</h3>
-                  <ul>
-                    <li><a href="classes.html">Ver Todas las Clases</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Entrenadores</h3>
-                  <ul>
-                    <li><a href="trainers.html">Nuestro Equipo</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Precios</h3>
-                  <ul>
-                    <li><a href="pricing.html">Planes y Membresías</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Unirme Ahora</h3>
-                  <ul>
-                    <li><a href="contact.html">Contacto</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Blog</h3>
-                  <ul>
-                    <li><a href="blog.html">Blog de Fitness</a></li>
-                  </ul>
-                </div>
+            </svg>
+            <span class="logo-text">FITPRO</span>
+          </a>
+
+          <!-- Botón de Modo Oscuro -->
+          <div class="d-flex align-items-center ms-auto px-4">
+            <button class="btn btn-outline-secondary dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <!-- Botón de Toggle para móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de Navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto px-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Menú
+                </a>
+                <ul class="dropdown-menu right ps-2" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="pages/classes.html">Clases</a></li>
+                  <li><a class="dropdown-item" href="pages/trainers.html">Nuestro Equipo</a></li>
+                  <li><a class="dropdown-item" href="pages/pricing.html">Planes y Precios</a></li>
+                  <li><a class="dropdown-item" href="pages/contact.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="pages/blog.html">Blog de Fitness</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="blog-page">
+      <section class="blog-header">
+        <h1>Blog FITPRO</h1>
+        <div class="blog-filters">
+          <a href="#" class="filter-btn active" data-category="all">Todos</a>
+          <a href="#" class="filter-btn" data-category="nutricion">Nutrición</a>
+          <a href="#" class="filter-btn" data-category="entrenamiento">Entrenamiento</a>
+          <a href="#" class="filter-btn" data-category="bienestar">Bienestar</a>
+        </div>
+      </section>
+
+      <div class="blog-grid">
+        <article class="blog-post" data-category="nutricion">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/nutricion.jpg" alt="Nutrición Deportiva">
+          </div>
+          <div class="post-content">
+            <h2>Guía Completa de Nutrición Deportiva</h2>
+            <div class="post-meta">
+              <span class="author">María González</span>
+              <span class="date">15 Mar 2025</span>
+              <span class="tag">Nutrición</span>
+            </div>
+            <p>Descubre los secretos de una alimentación óptima para deportistas...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="M"></div>
+              <div class="comment-content">
+                <p>¡Excelente artículo!</p>
               </div>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
-  </header>
+          </div>
+        </article>
 
-  <main class="blog-page">
-    <section class="blog-header">
-      <h1>Blog FITPRO</h1>
-      <div class="blog-filters">
-        <a href="#" class="filter-btn active" data-category="all">Todos</a>
-        <a href="#" class="filter-btn" data-category="nutricion">Nutrición</a>
-        <a href="#" class="filter-btn" data-category="entrenamiento">Entrenamiento</a>
-        <a href="#" class="filter-btn" data-category="bienestar">Bienestar</a>
+        <article class="blog-post featured" data-category="entrenamiento">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/rutina-hiit.jpeg" alt="Rutinas de Alta Intensidad">
+          </div>
+          <div class="post-content">
+            <h2>Rutinas HIIT: Máximo Resultado en Menos Tiempo Solo en FITPRO</h2>
+            <div class="post-meta">
+              <span class="author">Carlos Ramírez</span>
+              <span class="date">22 Abr 2025</span>
+              <span class="tag">Entrenamiento</span>
+            </div>
+            <p>Descubre cómo maximizar tu rendimiento con entrenamientos de alta intensidad altamente conocidos,
+              destacados por entrenar a los mejores deportitas actuales...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="C"></div>
+              <div class="comment-content">
+                <p>Muy útil para mi rutina diaria</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="bienestar">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/estres.jpg" alt="Salud Mental y Ejercicio">
+          </div>
+          <div class="post-content">
+            <h2>Ejercicio: Tu Aliado contra el Estrés</h2>
+            <div class="post-meta">
+              <span class="author">Laura Sánchez</span>
+              <span class="date">10 May 2025</span>
+              <span class="tag">Bienestar</span>
+            </div>
+            <p>Cómo el ejercicio puede transformar tu salud mental y emocional...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="L"></div>
+              <div class="comment-content">
+                <p>Un artículo muy inspirador</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="nutricion">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/nutricion-deportistas.jpg" alt="Proteínas Vegetales Para Deportistas">
+          </div>
+          <div class="post-content">
+            <h2>Proteínas Vegetales: Guía Completa para Deportistas</h2>
+            <div class="post-meta">
+              <span class="author">Ana Torres</span>
+              <span class="date">05 Jun 2025</span>
+              <span class="tag">Nutrición</span>
+            </div>
+            <p>Alternativas vegetales para una dieta proteica equilibrada...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="A"></div>
+              <div class="comment-content">
+                <p>Información muy valiosa</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="entrenamiento">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/recuperacion-muscular.jpg" alt="Recuperación Muscular">
+          </div>
+          <div class="post-content">
+            <h2>Recuperación Muscular: Estrategias Profesionales</h2>
+            <div class="post-meta">
+              <span class="author">Ana Martínez</span>
+              <span class="date">18 Jul 2025</span>
+              <span class="tag">Entrenamiento</span>
+            </div>
+            <p>Técnicas avanzadas para una recuperación muscular más rápida y efectiva...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="P"></div>
+              <div class="comment-content">
+                <p>Consejos muy útiles para mi entrenamiento</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="bienestar">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/psicologia-del-deporte.jpg" alt="Psicología del Deporte">
+          </div>
+          <div class="post-content">
+            <h2>Psicología del Deporte: Equilibrio Mental para Deportistas</h2>
+            <div class="post-meta">
+              <span class="author">Roberto García</span>
+              <span class="date">03 Ago 2025</span>
+              <span class="tag">Bienestar</span>
+            </div>
+            <p>Descubre cómo la psicología del deporte puede mejorar tu rendimiento...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="L"></div>
+              <div class="comment-content">
+                <p>Me ha ayudado mucho a controlar mi ansiedad</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="nutricion">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/suplementacion-deportiva.jpg" alt="Suplementación Deportiva">
+          </div>
+          <div class="post-content">
+            <h2>Guía Completa de Suplementación Deportiva Saludable</h2>
+            <div class="post-meta">
+              <span class="author">Diego López</span>
+              <span class="date">20 Sep 2025</span>
+              <span class="tag">Nutrición</span>
+            </div>
+            <p>Descubre los suplementos más efectivos para potenciar tu rendimiento...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="M"></div>
+              <div class="comment-content">
+                <p>Información muy clara y precisa</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="entrenamiento">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/crosstraining.jpg" alt="Cross Training">
+          </div>
+          <div class="post-content">
+            <h2>Cross Training: Entrenamiento Funcional Completo</h2>
+            <div class="post-meta">
+              <span class="author">Carlos Ramírez</span>
+              <span class="date">15 Oct 2025</span>
+              <span class="tag">Entrenamiento</span>
+            </div>
+            <p>Mejora tu condición física con entrenamientos multifuncionales...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="J"></div>
+              <div class="comment-content">
+                <p>Un método de entrenamiento revolucionario</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="bienestar">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/descanso.jpg" alt="Importancia del Descanso">
+          </div>
+          <div class="post-content">
+            <h2>El Sueño: Clave del Rendimiento Deportivo</h2>
+            <div class="post-meta">
+              <span class="author">Laura Sánchez</span>
+              <span class="date">07 Nov 2025</span>
+              <span class="tag">Bienestar</span>
+            </div>
+            <p>Cómo optimizar tu descanso para mejorar tu rendimiento físico y mental...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="A"></div>
+              <div class="comment-content">
+                <p>Consejos muy prácticos para dormir mejor</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post" data-category="nutricion">
+          <div class="post-thumbnail">
+            <img src="../assets/images/blog/hidratacion.jpg" alt="Hidratación Deportiva">
+          </div>
+          <div class="post-content">
+            <h2>Hidratación: El Secreto del Rendimiento Óptimo</h2>
+            <div class="post-meta">
+              <span class="author">María González</span>
+              <span class="date">22 Dic 2025</span>
+              <span class="tag">Nutrición</span>
+            </div>
+            <p>Estrategias de hidratación para diferentes tipos de entrenamiento...</p>
+            <a href="#" class="read-more">Leer más</a>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar" data-initial="C"></div>
+              <div class="comment-content">
+                <p>Información esencial para todo deportista</p>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
-    </section>
+    </main>
 
-    <div class="blog-grid">
-      <article class="blog-post" data-category="nutricion">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/nutricion.jpg" alt="Nutrición Deportiva">
-        </div>
-        <div class="post-content">
-          <h2>Guía Completa de Nutrición Deportiva</h2>
-          <div class="post-meta">
-            <span class="author">María González</span>
-            <span class="date">15 Mar 2025</span>
-            <span class="tag">Nutrición</span>
-          </div>
-          <p>Descubre los secretos de una alimentación óptima para deportistas...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="M"></div>
-            <div class="comment-content">
-              <p>¡Excelente artículo!</p>
-            </div>
-          </div>
-        </div>
-      </article>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const blogPage = document.querySelector('.blog-page');
 
-      <article class="blog-post featured" data-category="entrenamiento">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/rutina-hiit.jpeg" alt="Rutinas de Alta Intensidad">
-        </div>
-        <div class="post-content">
-          <h2>Rutinas HIIT: Máximo Resultado en Menos Tiempo Solo en FITPRO</h2>
-          <div class="post-meta">
-            <span class="author">Carlos Ramírez</span>
-            <span class="date">22 Abr 2025</span>
-            <span class="tag">Entrenamiento</span>
-          </div>
-          <p>Descubre cómo maximizar tu rendimiento con entrenamientos de alta intensidad altamente conocidos,
-            destacados por entrenar a los mejores deportitas actuales...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="C"></div>
-            <div class="comment-content">
-              <p>Muy útil para mi rutina diaria</p>
-            </div>
-          </div>
-        </div>
-      </article>
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Remover clase activa de todos los botones
+            filterButtons.forEach(btn => btn.classList.remove('active'));
 
-      <article class="blog-post" data-category="bienestar">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/estres.jpg" alt="Salud Mental y Ejercicio">
-        </div>
-        <div class="post-content">
-          <h2>Ejercicio: Tu Aliado contra el Estrés</h2>
-          <div class="post-meta">
-            <span class="author">Laura Sánchez</span>
-            <span class="date">10 May 2025</span>
-            <span class="tag">Bienestar</span>
-          </div>
-          <p>Cómo el ejercicio puede transformar tu salud mental y emocional...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="L"></div>
-            <div class="comment-content">
-              <p>Un artículo muy inspirador</p>
-            </div>
-          </div>
-        </div>
-      </article>
+            // Agregar clase activa al botón clickeado
+            button.classList.add('active');
 
-      <article class="blog-post" data-category="nutricion">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/nutricion-deportistas.jpg" alt="Proteínas Vegetales Para Deportistas">
-        </div>
-        <div class="post-content">
-          <h2>Proteínas Vegetales: Guía Completa para Deportistas</h2>
-          <div class="post-meta">
-            <span class="author">Ana Torres</span>
-            <span class="date">05 Jun 2025</span>
-            <span class="tag">Nutrición</span>
-          </div>
-          <p>Alternativas vegetales para una dieta proteica equilibrada...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="A"></div>
-            <div class="comment-content">
-              <p>Información muy valiosa</p>
-            </div>
-          </div>
-        </div>
-      </article>
+            // Remover todas las clases de filtro
+            blogPage.classList.remove('filter-nutricion', 'filter-entrenamiento', 'filter-bienestar');
 
-      <article class="blog-post" data-category="entrenamiento">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/recuperacion-muscular.jpg" alt="Recuperación Muscular">
-        </div>
-        <div class="post-content">
-          <h2>Recuperación Muscular: Estrategias Profesionales</h2>
-          <div class="post-meta">
-            <span class="author">Ana Martínez</span>
-            <span class="date">18 Jul 2025</span>
-            <span class="tag">Entrenamiento</span>
-          </div>
-          <p>Técnicas avanzadas para una recuperación muscular más rápida y efectiva...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="P"></div>
-            <div class="comment-content">
-              <p>Consejos muy útiles para mi entrenamiento</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="blog-post" data-category="bienestar">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/psicologia-del-deporte.jpg" alt="Psicología del Deporte">
-        </div>
-        <div class="post-content">
-          <h2>Psicología del Deporte: Equilibrio Mental para Deportistas</h2>
-          <div class="post-meta">
-            <span class="author">Roberto García</span>
-            <span class="date">03 Ago 2025</span>
-            <span class="tag">Bienestar</span>
-          </div>
-          <p>Descubre cómo la psicología del deporte puede mejorar tu rendimiento...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="L"></div>
-            <div class="comment-content">
-              <p>Me ha ayudado mucho a controlar mi ansiedad</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="blog-post" data-category="nutricion">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/suplementacion-deportiva.jpg" alt="Suplementación Deportiva">
-        </div>
-        <div class="post-content">
-          <h2>Guía Completa de Suplementación Deportiva Saludable</h2>
-          <div class="post-meta">
-            <span class="author">Diego López</span>
-            <span class="date">20 Sep 2025</span>
-            <span class="tag">Nutrición</span>
-          </div>
-          <p>Descubre los suplementos más efectivos para potenciar tu rendimiento...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="M"></div>
-            <div class="comment-content">
-              <p>Información muy clara y precisa</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="blog-post" data-category="entrenamiento">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/crosstraining.jpg" alt="Cross Training">
-        </div>
-        <div class="post-content">
-          <h2>Cross Training: Entrenamiento Funcional Completo</h2>
-          <div class="post-meta">
-            <span class="author">Carlos Ramírez</span>
-            <span class="date">15 Oct 2025</span>
-            <span class="tag">Entrenamiento</span>
-          </div>
-          <p>Mejora tu condición física con entrenamientos multifuncionales...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="J"></div>
-            <div class="comment-content">
-              <p>Un método de entrenamiento revolucionario</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="blog-post" data-category="bienestar">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/descanso.jpg" alt="Importancia del Descanso">
-        </div>
-        <div class="post-content">
-          <h2>El Sueño: Clave del Rendimiento Deportivo</h2>
-          <div class="post-meta">
-            <span class="author">Laura Sánchez</span>
-            <span class="date">07 Nov 2025</span>
-            <span class="tag">Bienestar</span>
-          </div>
-          <p>Cómo optimizar tu descanso para mejorar tu rendimiento físico y mental...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="A"></div>
-            <div class="comment-content">
-              <p>Consejos muy prácticos para dormir mejor</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="blog-post" data-category="nutricion">
-        <div class="post-thumbnail">
-          <img src="../assets/images/blog/hidratacion.jpg" alt="Hidratación Deportiva">
-        </div>
-        <div class="post-content">
-          <h2>Hidratación: El Secreto del Rendimiento Óptimo</h2>
-          <div class="post-meta">
-            <span class="author">María González</span>
-            <span class="date">22 Dic 2025</span>
-            <span class="tag">Nutrición</span>
-          </div>
-          <p>Estrategias de hidratación para diferentes tipos de entrenamiento...</p>
-          <a href="#" class="read-more">Leer más</a>
-        </div>
-        <div class="post-comments">
-          <div class="comment">
-            <div class="comment-avatar" data-initial="C"></div>
-            <div class="comment-content">
-              <p>Información esencial para todo deportista</p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </main>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const filterButtons = document.querySelectorAll('.filter-btn');
-      const blogPage = document.querySelector('.blog-page');
-
-      filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          // Remover clase activa de todos los botones
-          filterButtons.forEach(btn => btn.classList.remove('active'));
-
-          // Agregar clase activa al botón clickeado
-          button.classList.add('active');
-
-          // Remover todas las clases de filtro
-          blogPage.classList.remove('filter-nutricion', 'filter-entrenamiento', 'filter-bienestar');
-
-          // Agregar clase de filtro si no es "Todos"
-          const category = button.getAttribute('data-category');
-          if (category !== 'all') {
-            blogPage.classList.add(`filter-${category}`);
-          }
+            // Agregar clase de filtro si no es "Todos"
+            const category = button.getAttribute('data-category');
+            if (category !== 'all') {
+              blogPage.classList.add(`filter-${category}`);
+            }
+          });
         });
       });
-    });
-  </script>
+    </script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const reveals = document.querySelectorAll('.blog-post');
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const reveals = document.querySelectorAll('.blog-post');
 
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-      };
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+        };
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            }
+          });
+        }, observerOptions);
+
+        reveals.forEach(reveal => {
+          observer.observe(reveal);
         });
-      }, observerOptions);
-
-      reveals.forEach(reveal => {
-        observer.observe(reveal);
       });
-    });
-  </script>
+    </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-grid">
-        <!-- Newsletter Section -->
-        <div class="footer-section">
-          <h3>Suscríbete al Newsletter</h3>
-          <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
-          <form class="newsletter-form" id="newsletter-form">
-            <div class="form-group">
-              <input type="email" placeholder="Tu correo electrónico" required>
-              <button type="submit">Suscribirse</button>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <!-- Newsletter Section -->
+          <div class="footer-section">
+            <h3>Suscríbete al Newsletter</h3>
+            <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <div class="form-group">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact & Social Section -->
+          <div class="footer-section">
+            <h3>Síguenos en Redes</h3>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Link de Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Link de Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Link de Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Link de YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
             </div>
-          </form>
-        </div>
-
-        <!-- Contact & Social Section -->
-        <div class="footer-section">
-          <h3>Síguenos en Redes</h3>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Link de Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Link de Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Link de Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Link de YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
+              <p><i class="fas fa-envelope"></i> info@gymtop.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
+            </div>
           </div>
-          <div class="contact-info">
-            <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
-            <p><i class="fas fa-envelope"></i> info@gymtop.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
+
+          <!-- Map Section -->
+          <div class="footer-section map-section">
+            <h3>Encóntranos</h3>
+            <div class="map-container">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
+                width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
+              </iframe>
+            </div>
           </div>
         </div>
 
-        <!-- Map Section -->
-        <div class="footer-section map-section">
-          <h3>Encóntranos</h3>
-          <div class="map-container">
-            <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
-              width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
-            </iframe>
-          </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
         </div>
       </div>
+    </footer>
 
-      <!-- Copyright -->
-      <div class="footer-bottom">
-        <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../js/blog.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <script src="../js/newsletter.js"></script>
-  <script src="../js/darkmode.js"></script>
-</body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="../js/blog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="../js/darkmode.js"></script>
+  </body>
 
 </html>
