@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitpro - Clases</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/classes.css">
   <link rel="stylesheet" href="../css/card-classes.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo">
-        <a href="../index.html">
-          <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" width="50" height="30" class="me-2">
             <g class="logo-barbell">
               <!-- Barra central -->
               <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
@@ -37,54 +38,42 @@
               </g>
             </g>
           </svg>
-          FITPRO
+          <span class="logo-text">FITPRO</span>
         </a>
-      </h1>
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="#" class="menu-trigger">Menú</a>
-            <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-section">
-                  <h3>Clases</h3>
-                  <ul>
-                    <li><a href="classes.html">Ver Todas las Clases</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Entrenadores</h3>
-                  <ul>
-                    <li><a href="trainers.html">Nuestro Equipo</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Precios</h3>
-                  <ul>
-                    <li><a href="pricing.html">Planes y Membresías</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Unirme Ahora</h3>
-                  <ul>
-                    <li><a href="contact.html">Contacto</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Blog</h3>
-                  <ul>
-                    <li><a href="blog.html">Blog de Fitness</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
+
+        <!-- Botón de Modo Oscuro -->
+        <div class="d-flex align-items-center ms-auto px-4">
+          <button class="btn btn-outline-secondary dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+
+        <!-- Botón de Toggle para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de Navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto px-4">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menú
+              </a>
+              <ul class="dropdown-menu right ps-2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="pages/classes.html">Clases</a></li>
+                <li><a class="dropdown-item" href="pages/trainers.html">Nuestro Equipo</a></li>
+                <li><a class="dropdown-item" href="pages/pricing.html">Planes y Precios</a></li>
+                <li><a class="dropdown-item" href="pages/contact.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="pages/blog.html">Blog de Fitness</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main class="classes-page">
@@ -326,10 +315,12 @@
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <script src="js/newsletter.js"></script>
-  <script src="js/counter.js"></script>
-  <script src="../js/darkmode.js"></script>
+  referrerpolicy="no-referrer"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="../js/darkmode.js"></script> 
+  
 </body>
 
 </html>

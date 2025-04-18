@@ -2,183 +2,175 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitpro - Planes y Precios</title>
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/pricing.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitpro - Planes y Precios</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pricing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
+
+  <body>
     <header>
-        <div class="container">
-          <h1 class="logo">
-            <a href="../index.html">
-              <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-                <g class="logo-barbell">
-                  <!-- Barra central -->
-                  <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
-    
-                  <!-- Disco izquierdo -->
-                  <g transform="translate(5, 0)">
-                    <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
-                    <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
-                      stroke-width="2" />
-                  </g>
-    
-                  <!-- Disco derecho -->
-                  <g transform="translate(-5, 0)">
-                    <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
-                    <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
-                      stroke-width="2" />
-                  </g>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" width="50" height="30" class="me-2">
+              <g class="logo-barbell">
+                <!-- Barra central -->
+                <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
+
+                <!-- Disco izquierdo -->
+                <g transform="translate(5, 0)">
+                  <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
+                  <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                    stroke-width="2" />
                 </g>
-              </svg>
-              FITPRO
-            </a>
-          </h1>
-          <nav class="menu">
-            <ul>
-              <li>
-                <a href="#" class="menu-trigger">Menú</a>
-                <div class="mega-menu">
-                  <div class="mega-menu-content">
-                    <div class="mega-menu-section">
-                      <h3>Clases</h3>
-                      <ul>
-                        <li><a href="classes.html">Ver Todas las Clases</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Entrenadores</h3>
-                      <ul>
-                        <li><a href="trainers.html">Nuestro Equipo</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Precios</h3>
-                      <ul>
-                        <li><a href="pricing.html">Planes y Membresías</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Unirme Ahora</h3>
-                      <ul>
-                        <li><a href="contact.html">Contacto</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Blog</h3>
-                      <ul>
-                        <li><a href="blog.html">Blog de Fitness</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+
+                <!-- Disco derecho -->
+                <g transform="translate(-5, 0)">
+                  <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
+                  <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                    stroke-width="2" />
+                </g>
+              </g>
+            </svg>
+            <span class="logo-text">FITPRO</span>
+          </a>
+
+          <!-- Botón de Modo Oscuro -->
+          <div class="d-flex align-items-center ms-auto px-4">
+            <button class="btn btn-outline-secondary dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <!-- Botón de Toggle para móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de Navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto px-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Menú
+                </a>
+                <ul class="dropdown-menu right ps-2" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="pages/classes.html">Clases</a></li>
+                  <li><a class="dropdown-item" href="pages/trainers.html">Nuestro Equipo</a></li>
+                  <li><a class="dropdown-item" href="pages/pricing.html">Planes y Precios</a></li>
+                  <li><a class="dropdown-item" href="pages/contact.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="pages/blog.html">Blog de Fitness</a></li>
+                </ul>
               </li>
             </ul>
-          </nav>
-          <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
-            <i class="fas fa-moon"></i>
-          </button>
+          </div>
         </div>
-      </header>
+      </nav>
+    </header>
 
     <main class="pricing-page">
-        <section class="pricing-header">
-            <h1>Elige tu Plan Perfecto</h1>
-            <div class="pricing-toggle">
-                <input type="radio" id="monthly" name="pricing" checked>
-                <label for="monthly">Mensual</label>
-                <input type="radio" id="annual" name="pricing">
-                <label for="annual">Anual</label>
-            </div>
-        </section>
+      <section class="pricing-header">
+        <h1>Elige tu Plan Perfecto</h1>
+        <div class="pricing-toggle">
+          <input type="radio" id="monthly" name="pricing" checked>
+          <label for="monthly">Mensual</label>
+          <input type="radio" id="annual" name="pricing">
+          <label for="annual">Anual</label>
+        </div>
+      </section>
 
-        <section class="pricing-plans" id="planes-mensuales">
-            <div class="plan">
-                <div class="plan-inner">
-                    <h2>Plan Básico</h2>
-                    <div class="plan-price monthly-price">$29.99/mes</div>
-                    <div class="plan-price annual-price">$299.99/año</div>
-                    <ul class="plan-features">
-                        <li>
-                            <i class="fas fa-check"></i> Acceso a Gimnasio
-                            <span class="tooltip">Entrada ilimitada durante horario de atención</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i> Clases Grupales Básicas
-                            <span class="tooltip">Incluye clases de yoga y stretching</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-times"></i> Entrenador Personal
-                            <span class="tooltip">No incluido en este plan</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-times"></i> Nutrición Personalizada
-                            <span class="tooltip">No incluido en este plan</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="plan-cta">COMENZAR</a>
-                </div>
-            </div>
+      <section class="pricing-plans" id="planes-mensuales">
+        <div class="plan">
+          <div class="plan-inner">
+            <h2>Plan Básico</h2>
+            <div class="plan-price monthly-price">$29.99/mes</div>
+            <div class="plan-price annual-price">$299.99/año</div>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check"></i> Acceso a Gimnasio
+                <span class="tooltip">Entrada ilimitada durante horario de atención</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Clases Grupales Básicas
+                <span class="tooltip">Incluye clases de yoga y stretching</span>
+              </li>
+              <li>
+                <i class="fas fa-times"></i> Entrenador Personal
+                <span class="tooltip">No incluido en este plan</span>
+              </li>
+              <li>
+                <i class="fas fa-times"></i> Nutrición Personalizada
+                <span class="tooltip">No incluido en este plan</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="plan-cta">COMENZAR</a>
+          </div>
+        </div>
 
-            <div class="plan recommended">
-                <div class="plan-inner">
-                    <div class="plan-badge">Popular</div>
-                    <h2>Plan Premium</h2>
-                    <div class="plan-price monthly-price">$59.99/mes</div>
-                    <div class="plan-price annual-price">$599.99/año</div>
-                    <ul class="plan-features">
-                        <li>
-                            <i class="fas fa-check"></i> Acceso a Gimnasio
-                            <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i> Todas las Clases Grupales
-                            <span class="tooltip">Incluye CrossFit, Spinning, Yoga, etc.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i> Entrenador Personal
-                            <span class="tooltip">2 sesiones mensuales con entrenador</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i> Nutrición Personalizada
-                            <span class="tooltip">Plan nutricional adaptado a tus objetivos</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="plan-cta">COMENZAR</a>
-                </div>
-            </div>
+        <div class="plan recommended">
+          <div class="plan-inner">
+            <div class="plan-badge">Popular</div>
+            <h2>Plan Premium</h2>
+            <div class="plan-price monthly-price">$59.99/mes</div>
+            <div class="plan-price annual-price">$599.99/año</div>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check"></i> Acceso a Gimnasio
+                <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Todas las Clases Grupales
+                <span class="tooltip">Incluye CrossFit, Spinning, Yoga, etc.</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Entrenador Personal
+                <span class="tooltip">2 sesiones mensuales con entrenador</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Nutrición Personalizada
+                <span class="tooltip">Plan nutricional adaptado a tus objetivos</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="plan-cta">COMENZAR</a>
+          </div>
+        </div>
 
-            <div class="plan" >
-                <div class="plan-inner">
-                    <h2>Plan Intensivo</h2>
-                    <div class="plan-price monthly-price">$79.99/mes</div>
-                    <div class="plan-price annual-price">$799.99/año</div>
-                    <ul class="plan-features">
-                        <li>
-                            <i class="fas fa-check"></i> Acceso a Gimnasio
-                            <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i> Todas las Clases Grupales
-                            <span class="tooltip">Incluye clases especializadas y avanzadas</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i> Entrenador Personal Ilimitado
-                            <span class="tooltip">Sesiones ilimitadas con entrenadores especializados</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i> Nutrición y Suplementación
-                            <span class="tooltip">Plan nutricional avanzado y suplementos incluidos</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="plan-cta">COMENZAR</a>
-                </div>
-            </div>
-        </section>
+        <div class="plan">
+          <div class="plan-inner">
+            <h2>Plan Intensivo</h2>
+            <div class="plan-price monthly-price">$79.99/mes</div>
+            <div class="plan-price annual-price">$799.99/año</div>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check"></i> Acceso a Gimnasio
+                <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Todas las Clases Grupales
+                <span class="tooltip">Incluye clases especializadas y avanzadas</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Entrenador Personal Ilimitado
+                <span class="tooltip">Sesiones ilimitadas con entrenadores especializados</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Nutrición y Suplementación
+                <span class="tooltip">Plan nutricional avanzado y suplementos incluidos</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="plan-cta">COMENZAR</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -239,11 +231,12 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/footer.js"></script>
     <script src="../js/pricing.js"></script>
-    <script src="../js/newsletter.js"></script>
     <script src="../js/darkmode.js"></script>
-    
-</body>
+
+  </body>
 
 </html>

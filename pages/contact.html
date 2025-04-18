@@ -2,230 +2,227 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitpro - Contacto</title>
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitpro - Contacto</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
+
+  <body>
     <header>
-        <div class="container">
-          <h1 class="logo">
-            <a href="../index.html">
-              <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-                <g class="logo-barbell">
-                  <!-- Barra central -->
-                  <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3"/>
-                  
-                  <!-- Disco izquierdo -->
-                  <g transform="translate(5, 0)">
-                    <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4"/>
-                    <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00" stroke-width="2"/>
-                  </g>
-                  
-                  <!-- Disco derecho -->
-                  <g transform="translate(-5, 0)">
-                    <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4"/>
-                    <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00" stroke-width="2"/>
-                  </g>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" width="50" height="30" class="me-2">
+              <g class="logo-barbell">
+                <!-- Barra central -->
+                <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
+
+                <!-- Disco izquierdo -->
+                <g transform="translate(5, 0)">
+                  <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
+                  <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                    stroke-width="2" />
                 </g>
-              </svg>
-              FITPRO
-            </a>
-          </h1>
-          <nav class="menu">
-            <ul>
-              <li>
-                <a href="#" class="menu-trigger">Menú</a>
-                <div class="mega-menu">
-                  <div class="mega-menu-content">
-                    <div class="mega-menu-section">
-                      <h3>Clases</h3>
-                      <ul>
-                        <li><a href="classes.html">Ver Todas las Clases</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Entrenadores</h3>
-                      <ul>
-                        <li><a href="trainers.html">Nuestro Equipo</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Precios</h3>
-                      <ul>
-                        <li><a href="pricing.html">Planes y Membresías</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Unirme Ahora</h3>
-                      <ul>
-                        <li><a href="contact.html">Contacto</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-menu-section">
-                      <h3>Blog</h3>
-                      <ul>
-                        <li><a href="blog.html">Blog de Fitness</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+
+                <!-- Disco derecho -->
+                <g transform="translate(-5, 0)">
+                  <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
+                  <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                    stroke-width="2" />
+                </g>
+              </g>
+            </svg>
+            <span class="logo-text">FITPRO</span>
+          </a>
+
+          <!-- Botón de Modo Oscuro -->
+          <div class="d-flex align-items-center ms-auto px-4">
+            <button class="btn btn-outline-secondary dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <!-- Botón de Toggle para móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de Navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto px-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Menú
+                </a>
+                <ul class="dropdown-menu right ps-2" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="pages/classes.html">Clases</a></li>
+                  <li><a class="dropdown-item" href="pages/trainers.html">Nuestro Equipo</a></li>
+                  <li><a class="dropdown-item" href="pages/pricing.html">Planes y Precios</a></li>
+                  <li><a class="dropdown-item" href="pages/contact.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="pages/blog.html">Blog de Fitness</a></li>
+                </ul>
               </li>
             </ul>
-          </nav>
-          <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
-            <i class="fas fa-moon"></i>
-          </button>
+          </div>
         </div>
+      </nav>
     </header>
 
     <main class="contact-page">
-        <section class="contact-section">
-            <h1 class="section-title">UNETE A LA MEJOR COMUNIDAD GYMTOP</h1>
+      <section class="contact-section">
+        <h1 class="section-title">UNETE A LA MEJOR COMUNIDAD GYMTOP</h1>
 
-            <div class="contact-container">
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nombre Completo</label>
-                        <input class="input-area" type="text" id="name" name="name" required minlength="2" maxlength="50"
-                            pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+">
-                        <span class="error-message">Ingrese un nombre válido</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input class="input-area" type="email" id="email" name="email" required
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                        <span class="error-message">Ingrese un email válido</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Teléfono</label>
-                        <input class="input-area" type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
-                            placeholder="Ej: 1123456789">
-                        <span class="error-message">Ingrese un teléfono válido (10 dígitos)</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">Servicio de Interés</label>
-                        <select id="service" name="service" required>
-                            <option value="">Seleccione un servicio</option>
-                            <option value="musculacion">Musculación</option>
-                            <option value="crossfit">CrossFit</option>
-                            <option value="yoga">Yoga</option>
-                            <option value="spinning">Spinning</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                        <span class="error-message">Seleccione un servicio</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="plan">Plan de Interés</label>
-                        <select id="plan" name="plan" required>
-                            <option value="">Seleccione un plan </option>
-                            <optgroup label="Planes Mensuales">
-                                <option value="plan-basico-mensual">Plan Básico Mensual ($29.99)</option>
-                                <option value="plan-premium-mensual">Plan Premium Mensual ($59.99)</option>
-                                <option value="plan-intensivo-mensual">Plan Intensivo Mensual ($79.99)</option>
-                            </optgroup>
-                            <optgroup label="Planes Anuales">
-                                <option value="plan-basico-anual">Plan Básico Anual ($299.99)</option>
-                                <option value="plan-premium-anual">Plan Premium Anual ($599.99)</option>
-                                <option value="plan-intensivo-anual">Plan Intensivo Anual ($799.99)</option>
-                            </optgroup>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea class="input-area" id="message" name="message" required minlength="10" maxlength="500"></textarea>
-                        <span class="error-message">Escriba un mensaje (mín. 10 caracteres)</span>
-                    </div>
-
-                    <button type="submit" class="submit-btn">
-                        <span class="btn-text">Enviar Mensaje</span>
-                        <div class="spinner"></div>
-                    </button>
-                </form>
+        <div class="contact-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre Completo</label>
+              <input class="input-area" type="text" id="name" name="name" required minlength="2" maxlength="50"
+                pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+">
+              <span class="error-message">Ingrese un nombre válido</span>
             </div>
-        </section>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input class="input-area" type="email" id="email" name="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+              <span class="error-message">Ingrese un email válido</span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input class="input-area" type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
+                placeholder="Ej: 1123456789">
+              <span class="error-message">Ingrese un teléfono válido (10 dígitos)</span>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Servicio de Interés</label>
+              <select id="service" name="service" required>
+                <option value="">Seleccione un servicio</option>
+                <option value="musculacion">Musculación</option>
+                <option value="crossfit">CrossFit</option>
+                <option value="yoga">Yoga</option>
+                <option value="spinning">Spinning</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="error-message">Seleccione un servicio</span>
+            </div>
+
+            <div class="form-group">
+              <label for="plan">Plan de Interés</label>
+              <select id="plan" name="plan" required>
+                <option value="">Seleccione un plan </option>
+                <optgroup label="Planes Mensuales">
+                  <option value="plan-basico-mensual">Plan Básico Mensual ($29.99)</option>
+                  <option value="plan-premium-mensual">Plan Premium Mensual ($59.99)</option>
+                  <option value="plan-intensivo-mensual">Plan Intensivo Mensual ($79.99)</option>
+                </optgroup>
+                <optgroup label="Planes Anuales">
+                  <option value="plan-basico-anual">Plan Básico Anual ($299.99)</option>
+                  <option value="plan-premium-anual">Plan Premium Anual ($599.99)</option>
+                  <option value="plan-intensivo-anual">Plan Intensivo Anual ($799.99)</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea class="input-area" id="message" name="message" required minlength="10"
+                maxlength="500"></textarea>
+              <span class="error-message">Escriba un mensaje (mín. 10 caracteres)</span>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Enviar Mensaje</span>
+              <div class="spinner"></div>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Modal de Confirmación -->
     <div id="confirmation-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>¡Mensaje Enviado!</h2>
-            <p>Gracias por contactarnos. Nos pondremos en touch pronto.</p>
-            <button class="modal-close-btn">Aceptar</button>
-        </div>
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>¡Mensaje Enviado!</h2>
+        <p>Gracias por contactarnos. Nos pondremos en touch pronto.</p>
+        <button class="modal-close-btn">Aceptar</button>
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-grid">
-                <!-- Newsletter Section -->
-                <div class="footer-section">
-                    <h3>Suscríbete al Newsletter</h3>
-                    <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
-                    <form class="newsletter-form" id="newsletter-form">
-                        <div class="form-group">
-                            <input type="email" placeholder="Tu correo electrónico" required>
-                            <button type="submit">Suscribirse</button>
-                        </div>
-                    </form>
-                </div>
+      <div class="footer-content">
+        <div class="footer-grid">
+          <!-- Newsletter Section -->
+          <div class="footer-section">
+            <h3>Suscríbete al Newsletter</h3>
+            <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <div class="form-group">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+              </div>
+            </form>
+          </div>
 
-                <!-- Contact & Social Section -->
-                <div class="footer-section">
-                    <h3>Síguenos en Redes</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
-                        <p><i class="fas fa-envelope"></i> info@gymtop.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
-                    </div>
-                </div>
-
-                <!-- Map Section -->
-                <div class="footer-section map-section">
-                    <h3>Encóntranos</h3>
-                    <div class="map-container">
-                        <iframe
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
-                            width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
-                        </iframe>
-                    </div>
-                </div>
+          <!-- Contact & Social Section -->
+          <div class="footer-section">
+            <h3>Síguenos en Redes</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
             </div>
-
-            <!-- Copyright -->
-            <div class="footer-bottom">
-                <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
+              <p><i class="fas fa-envelope"></i> info@gymtop.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
             </div>
+          </div>
+
+          <!-- Map Section -->
+          <div class="footer-section map-section">
+            <h3>Encóntranos</h3>
+            <div class="map-container">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
+                width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
+              </iframe>
+            </div>
+          </div>
         </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
 
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/footer.js"></script>
     <script src="../js/contact.js"></script>
-    <script src="../js/newsletter.js"></script>
     <script src="../js/darkmode.js"></script>
-</body>
+  </body>
 
 </html>

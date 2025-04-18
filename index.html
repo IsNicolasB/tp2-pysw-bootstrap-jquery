@@ -5,12 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FitPro - Tu Gimnasio de Confianza</title>
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/card-classes.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" integrity="" />
 </head>
@@ -18,125 +14,121 @@
 <body>
 
   <header>
-    <div class="container">
-      <h1 class="logo">
-        <a href="../index.html" >
-          <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" width="50" height="30" class="me-2">
             <g class="logo-barbell">
               <!-- Barra central -->
-              <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3"/>
-              
+              <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
+
               <!-- Disco izquierdo -->
               <g transform="translate(5, 0)">
-                <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4"/>
-                <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00" stroke-width="2"/>
+                <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
+                <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                  stroke-width="2" />
               </g>
-              
+
               <!-- Disco derecho -->
               <g transform="translate(-5, 0)">
-                <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4"/>
-                <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00" stroke-width="2"/>
+                <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
+                <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                  stroke-width="2" />
               </g>
             </g>
           </svg>
-          FITPRO
+          <span class="logo-text">FITPRO</span>
         </a>
-      </h1>
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="#" class="menu-trigger">Menú</a>
-            <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-section">
-                  <h3>Clases</h3>
-                  <ul>
-                    <li><a href="pages/classes.html">Ver Todas las Clases</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Entrenadores</h3>
-                  <ul>
-                    <li><a href="pages/trainers.html">Nuestro Equipo</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Precios</h3>
-                  <ul>
-                    <li><a href="pages/pricing.html">Planes y Membresías</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Unirme Ahora</h3>
-                  <ul>
-                    <li><a href="pages/contact.html">Contacto</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-section">
-                  <h3>Blog</h3>
-                  <ul>
-                    <li><a href="pages/blog.html">Blog de Fitness</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
+
+        <!-- Botón de Modo Oscuro -->
+        <div class="d-flex align-items-center ms-auto px-4">
+          <button class="btn btn-outline-secondary dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+
+        <!-- Botón de Toggle para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de Navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto px-4">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menú
+              </a>
+              <ul class="dropdown-menu right ps-2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="pages/classes.html">Clases</a></li>
+                <li><a class="dropdown-item" href="pages/trainers.html">Nuestro Equipo</a></li>
+                <li><a class="dropdown-item" href="pages/pricing.html">Planes y Precios</a></li>
+                <li><a class="dropdown-item" href="pages/contact.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="pages/blog.html">Blog de Fitness</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
+
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="video-background">
-      <video autoplay muted loop playsinline>
+  <section class="hero position-relative min-vh-100 overflow-hidden d-flex align-items-center justify-content-center">
+    <div class="video-background position-absolute top-0 start-0 w-100 h-100">
+      <video class="position-absolute top-50 start-50 translate-middle w-100 h-100 object-fit-cover" autoplay muted loop
+        playsinline style="min-width:100vw; min-height:100vh; object-fit:cover;">
         <source src="assets/video/bg-motivational-video.mp4" type="video/mp4">
       </video>
-      <div class="overlay"></div>
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
     </div>
-    <div class="hero-content">
-      <h1 class="animate-text">TRANSFORMA TU CUERPO HOY</h1>
-      <h2 class="animate-text delay-1">NO HAY UN MAÑANA</h2>
-      <a href="pages/contact.html" class="cta-button animate-text delay-2">UNIRME AHORA</a>
+    <div
+      class="hero-content container position-relative text-center text-white d-flex flex-column align-items-center justify-content-center px-2 px-md-5"
+      style="z-index:2;">
+      <h1 class="fw-bold mb-3 animate-text display-4 display-md-3 display-lg-1 fs-1"
+        style="text-shadow: 0 2px 8px #000;">TRANSFORMA TU CUERPO HOY</h1>
+      <h2 class="mb-4 animate-text delay-1 fs-5 fs-md-3" style="text-shadow: 0 1px 4px #000;">NO HAY UN MAÑANA</h2>
+      <a href="pages/contact.html" class="btn cta-button btn-lg animate-text delay-2 px-4 py-2 fs-6 fs-md-5">UNIRME
+        AHORA</a>
     </div>
   </section>
   <!-- Fin Hero Section -->
 
-  <section class="classes-section">
-    <h2 class="section-title">CLASES DESTACADAS:</h2>
-    <div class="classes-grid">
-      
-      <div class="class-card" tabindex="0">
-        <div class="class-image">
-          <img src="assets/images/clases/musculación.jpeg" alt="Musculación">
-          <div class="class-overlay"></div>
-          <div class="class-content">
-            <h3>MUSCULACION</h3>
-            <p>Hipertrofia muscular con los mejores entrenadores del país.</p>
+  <section class="classes-section container-fluid px-4 py-5">
+    <h2 class="section-title text-center display-4 display-md-3 display-lg-1 fs-1 pb-4">CLASES DESTACADAS</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card class-card h-100 shadow-sm border-0 hover-card">
+          <img src="assets/images/clases/musculación.jpeg" class="card-img-top" alt="Musculación">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">MUSCULACION</h5>
+            <p class="card-text flex-grow-1">Hipertrofia muscular con los mejores entrenadores.</p>
+            <a href="#" class="btn cta-button mt-auto">Más Información</a>
           </div>
         </div>
       </div>
 
-      <div class="class-card" tabindex="0">
-        <div class="class-image">
-          <img src="assets/images/clases/crossfit.jpg" alt="CrossFit">
-          <div class="class-overlay"></div>
-          <div class="class-content">
-            <h3>CROSSFIT</h3>
-            <p>Entrenamos el cuerpo con las mejores actividades.</p>
+      <div class="col">
+        <div class="card class-card h-100 shadow-sm border-0 hover-card">
+          <img src="assets/images/clases/crossfit.jpg" class="card-img-top " alt="CrossFit">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">CROSSFIT</h5>
+            <p class="card-text flex-grow-1">Entrenamos el cuerpo con las mejores actividades.</p>
+            <a href="#" class="btn cta-button mt-auto">Más Información</a>
           </div>
         </div>
       </div>
 
-      <div class="class-card" tabindex="0">
-        <div class="class-image">
-          <img src="assets/images/clases/yoga.jpeg" alt="Yoga">
-          <div class="class-overlay"></div>
-          <div class="class-content">
-            <h3>YOGA</h3>
-            <p>Entrena cuerpo y mente.</p>
+      <div class="col">
+        <div class="card class-card h-100 shadow-sm border-0 hover-card">
+          <img src="assets/images/clases/yoga.jpeg" class="card-img-top" alt="Yoga">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">YOGA</h5>
+            <p class="card-text flex-grow-1">Entrena cuerpo y mente.</p>
+            <a href="#" class="btn cta-button mt-auto">Más Información</a>
           </div>
         </div>
       </div>
@@ -169,144 +161,160 @@
   </section>
 
   <!-- Testimonios Section -->
-  <section class="testimonials-section">
-    <h2 class="section-title">TESTIMONIOS</h2>
-    <div class="testimonials-carousel">
-      <div class="carousel-track">
-        <!-- Testimonio 1 -->
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            <div class="quote-icon">“</div>
-            <p>Excelente calidad en todos sus productos. El servicio de atención al cliente es excepcional. Totalmente
-              recomendado para cualquier persona que busque equipamiento de primera.</p>
-            <div class="testimonial-author">
-              <img src="assets/images/clientes/user1.jpeg" alt="Juan Pérez">
-              <div class="author-info">
-                <h4>Juan Pérez</h4>
-                <span>Cliente desde 2020</span>
+  <section class="testimonials-section container ">
+    <h2 class="section-title display-4 display-md-3 display-lg-1 fs-1 text-center mb-4">TESTIMONIOS</h2>
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card mx-auto" style="max-width: 600px;">
+            <div class="testimonial-content p-4">
+              <div class="quote-icon fs-1 mb-2">“</div>
+              <p>Excelente calidad la calidad de todas las máquinas. El servicio de atención al cliente es excepcional.
+                Recomendado para cualquier persona que busque un gimnasio de primera.</p>
+              <div class="testimonial-author d-flex align-items-center mt-3">
+                <img src="assets/images/clientes/user4.jpg" alt="Juan Garzón" class="rounded-circle me-3"
+                  style="width:56px; height:56px; object-fit:cover;">
+                <div class="author-info">
+                  <h4 class="mb-0">Juan Garzón</h4>
+                  <span class="text-muted small">Cliente desde 2020</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Testimonio 2 -->
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            <div class="quote-icon">“</div>
-            <p>Llevo tan solo seis meses entrenando y los resultados son espectaculares.
-              Además no he pasado por ninguna lesión gracias a sus cuidados y recomendaciones.</p>
-            <div class="testimonial-author">
-              <img src="assets/images/clientes/user2.jpg" alt="María Gómez">
-              <div class="author-info">
-                <h4>María Gómez</h4>
-                <span>Cliente desde 2021</span>
+        <div class="carousel-item">
+          <div class="testimonial-card mx-auto" style="max-width: 600px;">
+            <div class="testimonial-content p-4">
+              <div class="quote-icon fs-1 mb-2">“</div>
+              <p>Llevo tan solo seis meses entrenando y los resultados son espectaculares. Además no he pasado por
+                ninguna lesión gracias a sus cuidados y recomendaciones.</p>
+              <div class="testimonial-author d-flex align-items-center mt-3">
+                <img src="assets/images/clientes/user2.jpg" alt="María Gómez" class="rounded-circle me-3"
+                  style="width:56px; height:56px; object-fit:cover;">
+                <div class="author-info">
+                  <h4 class="mb-0">María Gómez</h4>
+                  <span class="text-muted small">Cliente desde 2021</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Testimonio 3 -->
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            <div class="quote-icon">“</div>
-            <p>Increible variedad de pesas y máquinas. Además tinen los mejores precios. La calidad de las barras y
-              discos es superior a cualquier otra que haya probado antes.</p>
-            <div class="testimonial-author">
-              <img src="assets/images/clientes/user3.jpg" alt="Carlos Rodríguez">
-              <div class="author-info">
-                <h4>Carlos Rodríguez</h4>
-                <span>Cliente desde 2022</span>
+        <div class="carousel-item">
+          <div class="testimonial-card mx-auto" style="max-width: 600px;">
+            <div class="testimonial-content p-4">
+              <div class="quote-icon fs-1 mb-2">“</div>
+              <p>Increible variedad de pesas y máquinas. Además tinen los mejores precios. La calidad de las barras y
+                discos es superior a cualquier otra que haya probado antes.</p>
+              <div class="testimonial-author d-flex align-items-center mt-3">
+                <img src="assets/images/clientes/user3.jpg" alt="Carlos Rodríguez" class="rounded-circle me-3"
+                  style="width:56px; height:56px; object-fit:cover;">
+                <div class="author-info">
+                  <h4 class="mb-0">Carlos Rodríguez</h4>
+                  <span class="text-muted small">Cliente desde 2022</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Copia del Testimonio 1 para loop infinito -->
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            <div class="quote-icon">“</div>
-            <p>Todos los entrenadores son excelentes. El servicio de atención al cliente es excepcional. Totalmente
-              recomendado para cualquier persona que busque cambiar su estilo de vida.</p>
-            <div class="testimonial-author">
-              <img src="assets/images/clientes/user1.jpeg" alt="Juan Pérez">
-              <div class="author-info">
-                <h4>Juan Pérez</h4>
-                <span>Cliente desde 2020</span>
+        <div class="carousel-item">
+          <div class="testimonial-card mx-auto" style="max-width: 600px;">
+            <div class="testimonial-content p-4">
+              <div class="quote-icon fs-1 mb-2">“</div>
+              <p>Todos los entrenadores son excelentes. El servicio de atención al cliente es excepcional. Totalmente
+                recomendado para cualquier persona que busque cambiar su estilo de vida.</p>
+              <div class="testimonial-author d-flex align-items-center mt-3">
+                <img src="assets/images/clientes/user1.jpeg" alt="Juan Pérez" class="rounded-circle me-3"
+                  style="width:56px; height:56px; object-fit:cover;">
+                <div class="author-info">
+                  <h4 class="mb-0">Juan Pérez</h4>
+                  <span class="text-muted small">Cliente desde 2020</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-grid">
+  <footer class="footer bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row g-4 text-center">
         <!-- Newsletter Section -->
-        <div class="footer-section">
-          <h3>Suscríbete al Newsletter</h3>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 mb-3">Suscríbete al Newsletter</h3>
           <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
-          <form class="newsletter-form" id="newsletter-form">
-            <div class="form-group">
-              <input type="email" placeholder="Tu correo electrónico" required>
-              <button type="submit">Suscribirse</button>
+          <form class="needs-validation" id="newsletter-form" novalidate autocomplete="off">
+            <div class="mb-3 position-relative">
+              <input type="email" class="form-control" id="newsletter-email" name="email"
+                placeholder="Tu correo electrónico" required>
+              <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+              <div class="valid-feedback">¡Perfecto!</div>
             </div>
+            <button type="submit" class="btn cta-button w-100 d-flex align-items-center justify-content-center"
+              id="newsletter-submit">
+              <span class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"
+                id="newsletter-spinner"></span>
+              Suscribirse
+            </button>
           </form>
         </div>
-
         <!-- Contact & Social Section -->
-        <div class="footer-section">
-          <h3>Síguenos en Redes</h3>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Link de Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Link de Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Link de Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Link de YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 mb-3">Síguenos en Redes</h3>
+          <div class="mb-3 d-flex gap-2 flex-wrap justify-content-center">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 social-link" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 social-link" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 social-link" aria-label="Twitter"><i
+                class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle social-link" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a>
           </div>
-          <div class="contact-info">
-            <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
-            <p><i class="fas fa-envelope"></i> contact@fitpro.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
+          <div class="contact-info small">
+            <p class="mb-1"><i class="fas fa-phone me-2"></i>+54 (11) 1234-5678</p>
+            <p class="mb-1"><i class="fas fa-envelope me-2"></i>contact@fitpro.com</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i>Av. Siempreviva 742, Springfield</p>
           </div>
         </div>
-
         <!-- Map Section -->
-        <div class="footer-section map-section">
-          <h3>Encóntranos</h3>
-          <div class="map-container">
+        <div class="col-12 col-md-4">
+          <h3 class="h5 mb-3">Encóntranos</h3>
+          <div class="ratio ratio-4x3 rounded overflow-hidden border border-secondary">
             <iframe
               src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
-              width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
-            </iframe>
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              style="border:0; width:100%; height:100%;"></iframe>
           </div>
         </div>
       </div>
-
-      <!-- Copyright -->
-      <div class="footer-bottom">
-        <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
+      <hr class="border-secondary my-4">
+      <div class="text-center small">
+        <p class="mb-0">&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-   <script src="js/jquery-3.7.1.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/footer.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
-  <script src="js/newsletter.js"></script>
-  <script src="js/counter.js"></script>
   <script src="js/darkmode.js"></script>
+  <script src="js/index.js"></script>
+  
 </body>
 
 </html>
