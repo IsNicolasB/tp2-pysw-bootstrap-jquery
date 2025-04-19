@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/classes.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  
 </head>
 
 <body>
@@ -75,141 +76,144 @@
     </nav>
   </header>
 
-  <main class="classes-page">
+  <main class="classes-page container">
     <section class="classes-section">
       <h1 class="section-title text-center pt-5 pb-3">NUESTRAS CLASES</h1>
 
-      <input type="radio" name="category" id="todos" class="filter-input" checked tabindex="0">
-      <input type="radio" name="category" id="musculacion" class="filter-input" tabindex="0">
-      <input type="radio" name="category" id="crossfit" class="filter-input" tabindex="0">
-      <input type="radio" name="category" id="yoga" class="filter-input" tabindex="0">
-      <input type="radio" name="category" id="spinning" class="filter-input" tabindex="0">
-
-      <!-- Filtros -->
-      <!-- Filtros (Responsive Bootstrap) -->
-      <div class="container classes-filters btn-group d-flex flex-wrap gap-2 mb-4 justify-content-center" role="group"
+      <!-- Botones de filtro -->
+      <div class=" classes-filters btn-group d-flex flex-wrap gap-2 mb-4 justify-content-center" role="group"
         aria-label="Filtros de clase">
-        <label for="todos" class="filter-label btn btn-outline-danger text-truncate mb-2 mb-md-0"
-          tabindex="0">Todas</label>
-        <label for="musculacion" class="filter-label btn btn-outline-danger text-truncate mb-2 mb-md-0"
-          tabindex="0">Musculación</label>
-        <label for="crossfit" class="filter-label btn btn-outline-danger text-truncate mb-2 mb-md-0"
-          tabindex="0">CrossFit</label>
-        <label for="yoga" class="filter-label btn btn-outline-danger text-truncate mb-2 mb-md-0"
-          tabindex="0">Yoga</label>
-        <label for="spinning" class="filter-label btn btn-outline-danger text-truncate mb-2 mb-md-0"
-          tabindex="0">Spinning</label>
+        <button class="filter-btn btn btn-primary text-truncate mb-2 mb-md-0" data-filter="todos">Todas</button>
+        <button class="filter-btn btn btn-outline-primary text-truncate mb-2 mb-md-0" data-filter="musculacion">Musculación</button>
+        <button class="filter-btn btn btn-outline-primary text-truncate mb-2 mb-md-0" data-filter="crossfit">CrossFit</button>
+        <button class="filter-btn btn btn-outline-primary text-truncate mb-2 mb-md-0" data-filter="yoga">Yoga</button>
+        <button class="filter-btn btn btn-outline-primary text-truncate mb-2 mb-md-0" data-filter="spinning">Spinning</button>
       </div>
 
       <!-- Galería de Clases -->
-      <div class="classes-gallery">
-        <div class="card class-card musculacion position-relative" tabindex="0">
-          <img src="../assets/images/clases/musculación.jpeg" class="card-img-top" alt="Musculación">
-          <div class="card-body">
-            <h5 class="card-title">MUSCULACIÓN</h5>
-            <p class="card-text">Hipertrofia muscular con los mejores entrenadores del país.</p>
-          </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Martes, Jueves y Sábados de 19:00 a 21:00</p>
-          </div>  
-        </div>
 
-        <div class="card class-card musculacion position-relative" tabindex="0">
-          <img src="../assets/images/clases/musculacion-avanzada.jpg" class="card-img-top" alt="Musculación">
-          <div class="card-body">
-            <h5 class="card-title">MUSCULACIÓN</h5>
-            <p class="card-text">Levantá pesado con los mejores entrenadores del país.</p>
-          </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Lunes, Miercoles y Viernes de 8:00 a 10:00</p>
+      <div class="row"
+        data-masonry='{"itemSelector": ".masonry-item", "percentPosition": true, "columnWidth": ".grid-sizer" }'>
+
+        <div class="grid-sizer col-md-4"></div>
+
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 musculacion">
+          <div class="card class-card-2  " tabindex="0">
+            <img src="../assets/images/clases/musculación.jpeg" class="card-img-top" alt="Musculación">
+            <div class="card-body">
+              <h5 class="card-title">MUSCULACIÓN</h5>
+              <p class="card-text">Hipertrofia muscular con los mejores entrenadores del país.</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Martes, Jueves y Sábados de 19:00 a 21:00</p>
+            </div>
           </div>
         </div>
 
-        <div class="card class-card crossfit position-relative" tabindex="0">
-          <img src="../assets/images/clases/crossfit.jpg" class="card-img-top" alt="CrossFit">
-          <div class="card-body">
-            <h5 class="card-title">CROSSFIT</h5>
-            <p class="card-text">Entrenamos el cuerpo con las mejores actividades.</p>
-          </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Martes, Jueves y Sábados de 8:00 a 10:00</p>
-          </div>
-        </div>
-        <div class="card class-card crossfit position-relative" tabindex="0">
-          <img src="../assets/images/clases/crossfit-avanzado.jpg" class="img-fluid" alt="CrossFit">
-          <div class="card-body">
-            <h5 class="card-title">CROSSFIT</h5>
-            <p class="card-text">Llevamos el cuerpo al máximo.</p>
-          </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Lunes, Miércoles y Jueves de 19:00 a 21:00</p>
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 musculacion">
+          <div class="card class-card-2 " tabindex="0">
+            <img src="../assets/images/clases/musculacion-avanzada.jpg" class="card-img-top" alt="Musculación">
+            <div class="card-body">
+              <h5 class="card-title">MUSCULACIÓN</h5>
+              <p class="card-text">Levantá pesado con los mejores entrenadores del país.</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Lunes, Miercoles y Viernes de 8:00 a 10:00</p>
+            </div>
           </div>
         </div>
 
-        <div class="card class-card yoga position-relative" tabindex="0">
-          <img src="../assets/images/clases/yoga.jpeg" class="card-img-top" alt="Yoga">
-          <div class="card-body">
-            <h5 class="card-title">YOGA</h5>
-            <p class="card-text">Entrena cuerpo y mente.</p>
-          </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Lunes, Miércoles y Viernes de 10:00 a 13:00</p>
-          </div>
-        </div>
-        <div class="card class-card yoga position-relative" tabindex="0">
-          <img src="../assets/images/clases/yoga-en-pareja.jpg" class="card-img-top" alt="Yoga">
-          <div class="card-body">
-            <h5 class="card-title">YOGA</h5>
-            <p class="card-text">Entrena cuerpo, mente y fortalece tus relaciones.</p>
-          </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Martes, Jueves y Sábado de 21:00 a 23:00</p>
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 crossfit ">
+          <div class="card class-card-2 " tabindex="0">
+            <img src="../assets/images/clases/crossfit.jpg" class="card-img-top" alt="CrossFit">
+            <div class="card-body">
+              <h5 class="card-title">CROSSFIT</h5>
+              <p class="card-text">Entrenamos el cuerpo con las mejores actividades.</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Martes, Jueves y Sábados de 8:00 a 10:00</p>
+            </div>
           </div>
         </div>
 
-        <div class="card class-card spinning position-relative" tabindex="0">
-          <img src="../assets/images/clases/spinning.jpg" class="card-img-top" alt="Spinning">
-          <div class="card-body">
-            <h5 class="card-title">SPINNING</h5>
-            <p class="card-text">Cardio de alta energía en bicicletas estáticas</p>
-          </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Martes, Jueves y Sábado de 10:00 a 13:00</p>
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 crossfit ">
+          <div class="card class-card-2" tabindex="0">
+            <img src="../assets/images/clases/crossfit-avanzado.jpg" class="img-fluid" alt="CrossFit">
+            <div class="card-body">
+              <h5 class="card-title">CROSSFIT</h5>
+              <p class="card-text">Llevamos el cuerpo al máximo.</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Lunes, Miércoles y Jueves de 19:00 a 21:00</p>
+            </div>
           </div>
         </div>
 
-        <div class="card class-card spinning position-relative" tabindex="0">
-          <img src="../assets/images/clases/spinning2.jpg" class="card-img-top" alt="Spinning">
-          <div class="card-body">
-            <h5 class="card-title">SPINNING</h5>
-            <p class="card-text">Cardio de alta energía en bicicletas estáticas</p>
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 yoga">
+          <div class="card class-card-2" tabindex="0">
+            <img src="../assets/images/clases/yoga.jpeg" class="card-img-top" alt="Yoga">
+            <div class="card-body">
+              <h5 class="card-title">YOGA</h5>
+              <p class="card-text">Entrena cuerpo y mente.</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Lunes, Miércoles y Viernes de 10:00 a 13:00</p>
+            </div>
           </div>
-          <div
-            class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center"
-            >
-            <h6>Horario</h6>
-            <p>Lunes, Miércoles y Viernes de 21:00 a 23:00</p>
+        </div>
+
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 yoga">
+          <div class="card class-card-2" tabindex="0">
+            <img src="../assets/images/clases/yoga-en-pareja.jpg" class="card-img-top" alt="Yoga">
+            <div class="card-body">
+              <h5 class="card-title">YOGA</h5>
+              <p class="card-text">Entrena cuerpo, mente y fortalece tus relaciones.</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Martes, Jueves y Sábado de 21:00 a 23:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 spinning ">
+          <div class="card class-card-2" tabindex="0">
+            <img src="../assets/images/clases/spinning.jpg" class="card-img-top" alt="Spinning">
+            <div class="card-body">
+              <h5 class="card-title">SPINNING</h5>
+              <p class="card-text">Cardio de alta energía en bicicletas estáticas</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Martes, Jueves y Sábado de 10:00 a 13:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item col-sm-6 col-lg-4 p-2 spinning ">
+          <div class="card class-card-2" tabindex="0">
+            <img src="../assets/images/clases/spinning2.jpg" class="card-img-top" alt="Spinning">
+            <div class="card-body">
+              <h5 class="card-title">SPINNING</h5>
+              <p class="card-text">Cardio de alta energía en bicicletas estáticas</p>
+            </div>
+            <div
+              class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white text-center">
+              <h6>Horario</h6>
+              <p>Lunes, Miércoles y Viernes de 21:00 a 23:00</p>
+            </div>
           </div>
         </div>
       </div>
@@ -333,12 +337,13 @@
     </div>
   </footer>
   <!-- Scripts: Masonry, jQuery, Bootstrap, and gallery logic -->
-  <script src="[https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="../js/classes-gallery.js"></script>
   <script src="../js/footer.js"></script>
   <script src="../js/darkmode.js"></script>

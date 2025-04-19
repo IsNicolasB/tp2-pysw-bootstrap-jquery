@@ -574,22 +574,6 @@ header {
     background: var(--primary-color);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .newsletter-form .form-group {
-        flex-direction: column;
-    }
-
-    .newsletter-form button {
-        width: 100%;
-    }
-}
-
 /* Testimonios */
 .testimonial-card {
     background: var(--secondary-color);
