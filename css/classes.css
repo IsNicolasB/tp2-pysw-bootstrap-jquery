@@ -4,36 +4,6 @@
     padding: 4rem 0;
 }
 
-.classes-filters {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 0.5rem 1rem;
-    background-color: var(--background-color);
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) var(--shadow-color);
-}
-
-@media (min-width: 768px) {
-    .classes-filters {
-        justify-content: center;
-    }
-}
-
-.classes-filters::-webkit-scrollbar {
-    height: 8px;
-}
-
-.classes-filters::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-.classes-filters::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-}
-
 .filter-label {
     padding: 10px 20px;
     background-color: var(--shadow-color);
@@ -49,14 +19,11 @@
     color: white;
 }
 
-.filter-input:checked + .filter-label {
-    background-color: #ff4d4d;
-    color: white;
-}
 
 .filter-input{
     display: none;
 }
+
 
 .classes-gallery {
     display: grid;
@@ -72,48 +39,60 @@
     display: none;
     grid-row-end: span 25;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .class-card:nth-child(3n+1) {
-    grid-row-end: span 30;
+    grid-row-end: span 25;
 }
 
 .class-card:nth-child(4n+2) {
-    grid-row-end: span 35;
+    grid-row-end: span 30;
 }
 
 .class-card:nth-child(5n+3) {
-    grid-row-end: span 20;
+    grid-row-end: span 24;
 }
 
-.class-card .class-content {
-    display: block;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
+.class-card .card-img-top {
+    width: 100%;
+    height: 75%;
+}
+
+.class-card .card-body {
+    height: 25%;
+    color: var(--text-color);
+}
+
+.class-card .card-title {
+    margin-bottom: 0.5rem;
+}
+
+.class-card .card-text {
+    flex-grow: 1;
+}
+
+.class-card .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
 }
 
-.class-card .class-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.class-card .class-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* Filtros CSS */
-#todos:checked ~ .classes-gallery .class-card,
-#musculacion:checked ~ .classes-gallery .class-card.musculacion,
-#crossfit:checked ~ .classes-gallery .class-card.crossfit,
-#yoga:checked ~ .classes-gallery .class-card.yoga,
-#spinning:checked ~ .classes-gallery .class-card.spinning{
-    display: block;
+.class-card .card-overlay.show {
+    display: flex;
+    opacity: 1;
 }
 
 /* Estilos de Focus para Filtros */
@@ -128,84 +107,21 @@
     transition: all 0.3s ease;
 }
 
-/* Horarios Semanales */
-.schedule-section {
-    padding: 2rem 1rem;
-    background-color: var(--background-color);
+/* Estilos de Focus Visible para Tarjetas de Clases */
+.card.class-card:focus-visible {
+    transform: scale(1.02);
+    z-index: 10;
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
-.schedule-table-container {
-    width: 100%;
-    overflow-x: auto;
+.card.class-card:focus-visible .card-overlay {
+    display: flex;
+    opacity: 1;
 }
 
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 800px;
-    min-height: 300px;
-}
 
-.schedule-table th, 
-.schedule-table td {
-    border: 1px solid var(--shadow-color);
-    padding: 12px;
-    text-align: center;
-}
 
-.schedule-table thead {
-    background-color: var(--primary-color);
-    color: white;
-}
 
-.schedule-table tbody tr:nth-child(even) {
-    background-color: var(--shadow-color);
-}
-
-/* Estilos para clases en la tabla */
-.schedule-table .class-musculacion {
-    background-color: #ff7f50;
-    color: white;
-}
-
-.schedule-table .class-crossfit {
-    background-color: #4ecdc4;
-    color: white;
-}
-
-.schedule-table .class-yoga {
-    background-color: #45b7d1;
-    color: white;
-}
-
-.schedule-table .class-spinning {
-    background-color: #f9d56e;
-    color: #333;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .schedule-table {
-        font-size: 0.8rem;
-    }
-
-    .schedule-table th, 
-    .schedule-table td {
-        padding: 8px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .schedule-table-container {
-        overflow-x: scroll;
-    }
-
-    .schedule-table {
-        font-size: 0.7rem;
-    }
-
-    .schedule-table th, 
-    .schedule-table td {
-        padding: 6px;
-    }
-}
