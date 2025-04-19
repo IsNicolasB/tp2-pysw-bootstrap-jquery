@@ -47,25 +47,23 @@
     border-color: var(--primary-color);
 }
 
+.blog-filters-wrapper {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .blog-filters {
+    min-width: max-content;
+  }
+/* Estilos para la Grid de Artículos */
+
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;
 }
-
-/* Configuración inicial para los artículos */
-.blog-grid .blog-post {
-    display: block;
-}
-
-.blog-post:nth-child(1) { --order: 0; }
-.blog-post:nth-child(2) { --order: 1; }
-.blog-post:nth-child(3) { --order: 2; }
-.blog-post:nth-child(4) { --order: 3; }
-.blog-post:nth-child(5) { --order: 4; }
-.blog-post:nth-child(6) { --order: 5; }
-.blog-post:nth-child(7) { --order: 6; }
-.blog-post:nth-child(8) { --order: 7; }
 
 /* Scroll Reveal */
 .blog-post {
@@ -104,10 +102,6 @@
 .blog-post.featured .post-content {
     grid-row: 2;
     width: 100%;
-}
-
-.blog-post.featured .post-comments {
-    grid-row: 3;
 }
 
 .post-thumbnail {
@@ -163,20 +157,12 @@
 }
 
 /* Estilos para Comentarios */
-.post-comments {
-    background-color: var(--shadow-color);
-    padding: 1rem;
-    border-top: 1px solid var(--background-color);
-    width: 100%;
-    order: 3;
+
+.comment-box{
+    margin: 0 auto;
 }
 
-.blog-post.featured .post-comments {
-    width: 100%;
-    order: 3;
-}
-
-.comment {
+.comment{
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -211,27 +197,10 @@
     transform: translate(-50%, -50%);
 }
 
-.comment-content {
-    flex-grow: 1;
-}
-
 .comment-author {
-    display: block;
     font-weight: bold;
-    color: #333;
     margin-bottom: 0.5rem;
-}
-
-.comment-content p {
-    color: #666;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.post-comments .comment-count {
-    background-color: var(--primary-color);
-    color: white;
-}
+} 
 
 /* Filtrado de categorías */
 .filter-nutricion .blog-post:not([data-category="nutricion"]),
@@ -242,16 +211,31 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-
     .blog-post.featured {
         grid-column: span 1;
     }
+}
 
-    .blog-post.featured .post-thumbnail,
-    .blog-post.featured .post-content {
-        width: 100%;
-    }
+.comment.highlight {
+    background-color: #fff8dc;
+    border-left: 4px solid gold;
+  }
+
+.comment-content a{
+    text-decoration: none;
+    font-style: italic;
+}
+
+.comment-content p{
+    color:var(--text-color);
+    margin: 0;
+    line-height: 1.4;
+}
+.comment-content a p:hover{
+    text-decoration: none;
+    color:var(--primary-color)
+}
+
+.comment-content.row{
+    width: 100%;
 }

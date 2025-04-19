@@ -108,7 +108,6 @@ header {
 
 .navbar-toggler.collapsed{
     background-color: var(--primary-color) !important;
-    color: var(--text-color) !important;
 }
 
 .navbar-toggler:hover{
@@ -212,6 +211,10 @@ header {
   border-top-right-radius: 0.5rem;
 }
 
+.classes-section .class-card .card-body {
+    color: var(--text-color);
+}
+
 /* Stats Section */
 .stats-section {
     display: flex;
@@ -271,13 +274,6 @@ header {
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-@media screen and (max-width: 768px) {
-    .stats-grid {
-        grid-template-columns: repeat(4, 250px);
-        padding-bottom: 1rem;
-    }
 }
 
 .stat-item {
@@ -349,16 +345,6 @@ header {
     background: var(--accent-color);
     overflow: hidden;
 }
-
-.testimonials-carousel {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 2rem 0;
-}
-
 .carousel-track {
     display: flex;
     width: 400%; /* 4 slides * 100% */
@@ -378,11 +364,6 @@ header {
     }
 }
 
-.testimonial-card {
-    flex: 0 0 25%; /* Each card takes 1/4 of carousel-track */
-    padding: 0 1rem;
-}
-
 .testimonial-content {
     background: var(--accent-color);
     padding: 2rem;
@@ -391,6 +372,32 @@ header {
     position: relative;
     transition: transform 0.3s ease;
 }
+
+.testimonial-card {
+    background: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    padding: 2rem;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card .quote-icon {
+    color: var(--primary-color);
+}
+
+.testimonial-card p {
+    color: var(--text-color);
+}
+
+.testimonial-author .author-info h4 {
+    color: var(--text-color);
+}
+
+.testimonial-author .author-info span {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
 
 .testimonial-card:hover .testimonial-content {
     transform: translateY(-10px);
@@ -406,21 +413,6 @@ header {
     opacity: 0.8;
 }
 
-.testimonial-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-    margin: 1rem 0 2rem;
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
 .testimonial-author img {
     width: 60px;
     height: 60px;
@@ -434,9 +426,8 @@ header {
     margin: 0;
 }
 
-.author-info span {
-    font-size: 0.9rem;
-    color: #666;
+.author-info span.text-muted.small{
+    color: var(--text-color) !important;
 }
 
 /* Footer Styles */
@@ -585,32 +576,6 @@ header {
 
 .dark-mode-toggle:hover {
     background: var(--primary-color);
-}
-
-/* Testimonios */
-.testimonial-card {
-    background: var(--secondary-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    padding: 2rem;
-    transition: background 0.3s, box-shadow 0.3s;
-}
-
-.testimonial-card .quote-icon {
-    color: var(--primary-color);
-}
-
-.testimonial-card p {
-    color: var(--text-color);
-}
-
-.testimonial-author .author-info h4 {
-    color: var(--text-color);
-}
-
-.testimonial-author .author-info span {
-    color: var(--text-color);
-    opacity: 0.7;
 }
 
 /* Clases */

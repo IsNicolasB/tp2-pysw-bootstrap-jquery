@@ -78,309 +78,356 @@
     </header>
 
     <main class="blog-page">
-      <section class="blog-header">
+      <section class="blog-header pt-4">
         <h1>Blog FITPRO</h1>
-        <div class="blog-filters">
-          <a href="#" class="filter-btn active" data-category="all">Todos</a>
-          <a href="#" class="filter-btn" data-category="nutricion">Nutrición</a>
-          <a href="#" class="filter-btn" data-category="entrenamiento">Entrenamiento</a>
-          <a href="#" class="filter-btn" data-category="bienestar">Bienestar</a>
+        <div class="blog-filters-wrapper overflow-auto">
+          <div class="blog-filters d-flex flex-nowrap gap-2 py-2">
+            <a href="#" class="filter-btn active" data-category="all">Todos</a>
+            <a href="#" class="filter-btn" data-category="nutricion">Nutrición</a>
+            <a href="#" class="filter-btn" data-category="entrenamiento">Entrenamiento</a>
+            <a href="#" class="filter-btn" data-category="bienestar">Bienestar</a>
+          </div>
         </div>
       </section>
-
-      <div class="blog-grid">
-        <article class="blog-post" data-category="nutricion">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/nutricion.jpg" alt="Nutrición Deportiva">
-          </div>
-          <div class="post-content">
-            <h2>Guía Completa de Nutrición Deportiva</h2>
-            <div class="post-meta">
-              <span class="author">María González</span>
-              <span class="date">15 Mar 2025</span>
-              <span class="tag">Nutrición</span>
+      <div class="container">
+        <div class="row g-4 blog-grid">
+          <article class="blog-post " data-category="nutricion" id="Nutrición Deportiva">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/nutricion.jpg" alt="Nutrición Deportiva">
             </div>
-            <p>Descubre los secretos de una alimentación óptima para deportistas...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="M"></div>
-              <div class="comment-content">
-                <p>¡Excelente artículo!</p>
+            <div class="post-content">
+              <h2>Guía Completa de Nutrición Deportiva</h2>
+              <div class="post-meta">
+                <span class="author">María González</span>
+                <span class="date">15 Mar 2025</span>
+                <span class="tag">Nutrición</span>
+              </div>
+              <p>Descubre los secretos de una alimentación óptima para deportistas...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post featured" data-category="entrenamiento" id="Rutinas HIIT">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/rutina-hiit.jpeg" alt="Rutinas de Alta Intensidad">
+            </div>
+            <div class="post-content">
+              <h2>Rutinas HIIT: Máximo Resultado en Menos Tiempo Solo en FITPRO</h2>
+              <div class="post-meta">
+                <span class="author">Carlos Ramírez</span>
+                <span class="date">22 Abr 2025</span>
+                <span class="tag">Entrenamiento</span>
+              </div>
+              <p>Descubre cómo maximizar tu rendimiento con entrenamientos de alta intensidad altamente conocidos,
+                destacados por entrenar a los mejores deportitas actuales...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post " data-category="bienestar" id="Ejercicio">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/estres.jpg" alt="Salud Mental y Ejercicio">
+            </div>
+            <div class="post-content">
+              <h2>Ejercicio: Tu Aliado contra el Estrés</h2>
+              <div class="post-meta">
+                <span class="author">Laura Sánchez</span>
+                <span class="date">10 May 2025</span>
+                <span class="tag">Bienestar</span>
+              </div>
+              <p>Cómo el ejercicio puede transformar tu salud mental y emocional...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post " data-category="nutricion" id="Proteínas Vegetales">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/nutricion-deportistas.jpg" alt="Proteínas Vegetales Para Deportistas">
+            </div>
+            <div class="post-content">
+              <h2>Proteínas Vegetales: Guía Completa para Deportistas</h2>
+              <div class="post-meta">
+                <span class="author">Ana Torres</span>
+                <span class="date">05 Jun 2025</span>
+                <span class="tag">Nutrición</span>
+              </div>
+              <p>Alternativas vegetales para una dieta proteica equilibrada...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post " data-category="entrenamiento" id="Recuperación Muscular">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/recuperacion-muscular.jpg" alt="Recuperación Muscular">
+            </div>
+            <div class="post-content">
+              <h2>Recuperación Muscular: Estrategias Profesionales</h2>
+              <div class="post-meta">
+                <span class="author">Ana Martínez</span>
+                <span class="date">18 Jul 2025</span>
+                <span class="tag">Entrenamiento</span>
+              </div>
+              <p>Técnicas avanzadas para una recuperación muscular más rápida y efectiva...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post " data-category="bienestar" id="Psicología del Deporte">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/psicologia-del-deporte.jpg" alt="Psicología del Deporte">
+            </div>
+            <div class="post-content">
+              <h2>Psicología del Deporte: Equilibrio Mental para Deportistas</h2>
+              <div class="post-meta">
+                <span class="author">Roberto García</span>
+                <span class="date">03 Ago 2025</span>
+                <span class="tag">Bienestar</span>
+              </div>
+              <p>Descubre cómo la psicología del deporte puede mejorar tu rendimiento...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post " data-category="nutricion" id="Suplementación Deportiva">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/suplementacion-deportiva.jpg" alt="Suplementación Deportiva">
+            </div>
+            <div class="post-content">
+              <h2>Guía Completa de Suplementación Deportiva Saludable</h2>
+              <div class="post-meta">
+                <span class="author">Diego López</span>
+                <span class="date">20 Sep 2025</span>
+                <span class="tag">Nutrición</span>
+              </div>
+              <p>Descubre los suplementos más efectivos para potenciar tu rendimiento...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post " data-category="entrenamiento" id="Cross Training">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/crosstraining.jpg" alt="Cross Training">
+            </div>
+            <div class="post-content">
+              <h2>Cross Training: Entrenamiento Funcional Completo</h2>
+              <div class="post-meta">
+                <span class="author">Carlos Ramírez</span>
+                <span class="date">15 Oct 2025</span>
+                <span class="tag">Entrenamiento</span>
+              </div>
+              <p>Mejora tu condición física con entrenamientos multifuncionales...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post featured" data-category="bienestar" id="Descanso">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/descanso.jpg" alt="Importancia del Descanso">
+            </div>
+            <div class="post-content">
+              <h2>El Sueño: Clave del Rendimiento Deportivo</h2>
+              <div class="post-meta">
+                <span class="author">Laura Sánchez</span>
+                <span class="date">07 Nov 2025</span>
+                <span class="tag">Bienestar</span>
+              </div>
+              <p>Cómo optimizar tu descanso para mejorar tu rendimiento físico y mental...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+
+          <article class="blog-post " data-category="nutricion" id="Hidratación">
+            <div class="post-thumbnail">
+              <img src="../assets/images/blog/hidratacion.jpg" alt="Hidratación Deportiva">
+            </div>
+            <div class="post-content">
+              <h2>Hidratación: El Secreto del Rendimiento Óptimo</h2>
+              <div class="post-meta">
+                <span class="author">María González</span>
+                <span class="date">22 Dic 2025</span>
+                <span class="tag">Nutrición</span>
+              </div>
+              <p>Estrategias de hidratación para diferentes tipos de entrenamiento...</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+
+          </article>
+        </div>
+
+        <div class="comment-box col-12 col-md-8">
+          <h2 class="section-title display-4 display-md-3 display-lg-1 fs-1 text-center mb-4 py-4">Comentarios</h2>
+          <div class="comment container" data-category="nutricion">
+            <div class="comment-avatar" data-initial="M"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Maria Llanos</p>
+              <p>¡Excelente artículo!</p>
+              <div class="col-12 col-md-6">
+                <a href="#Nutrición Deportiva">
+                  <p> Guía Completa de Nutrición Deportiva</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post featured" data-category="entrenamiento">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/rutina-hiit.jpeg" alt="Rutinas de Alta Intensidad">
-          </div>
-          <div class="post-content">
-            <h2>Rutinas HIIT: Máximo Resultado en Menos Tiempo Solo en FITPRO</h2>
-            <div class="post-meta">
-              <span class="author">Carlos Ramírez</span>
-              <span class="date">22 Abr 2025</span>
-              <span class="tag">Entrenamiento</span>
-            </div>
-            <p>Descubre cómo maximizar tu rendimiento con entrenamientos de alta intensidad altamente conocidos,
-              destacados por entrenar a los mejores deportitas actuales...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="C"></div>
-              <div class="comment-content">
-                <p>Muy útil para mi rutina diaria</p>
+          <div class="comment container" data-category="entrenamiento">
+            <div class="comment-avatar" data-initial="C"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Carlos Pérez</p>
+              <p>Muy útil para mi rutina diaria</p>
+              <div class="col-12 col-md-6">
+                <a href="#Rutinas HIIT">
+                  <p> Rutinas HIIT: Máximo Resultado en Menos Tiempo</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="bienestar">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/estres.jpg" alt="Salud Mental y Ejercicio">
-          </div>
-          <div class="post-content">
-            <h2>Ejercicio: Tu Aliado contra el Estrés</h2>
-            <div class="post-meta">
-              <span class="author">Laura Sánchez</span>
-              <span class="date">10 May 2025</span>
-              <span class="tag">Bienestar</span>
-            </div>
-            <p>Cómo el ejercicio puede transformar tu salud mental y emocional...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="L"></div>
-              <div class="comment-content">
-                <p>Un artículo muy inspirador</p>
+          <div class="comment container" data-category="bienestar">
+            <div class="comment-avatar" data-initial="L"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Lucía Gómez</p>
+              <p>Un artículo muy inspirador</p>
+              <div class="col-12 col-md-6">
+                <a href="#Ejercicio">
+                  <p> Ejercicio: Tu Aliado contra el Estrés</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="nutricion">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/nutricion-deportistas.jpg" alt="Proteínas Vegetales Para Deportistas">
-          </div>
-          <div class="post-content">
-            <h2>Proteínas Vegetales: Guía Completa para Deportistas</h2>
-            <div class="post-meta">
-              <span class="author">Ana Torres</span>
-              <span class="date">05 Jun 2025</span>
-              <span class="tag">Nutrición</span>
-            </div>
-            <p>Alternativas vegetales para una dieta proteica equilibrada...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="A"></div>
-              <div class="comment-content">
-                <p>Información muy valiosa</p>
+          <div class="comment container" data-category="nutricion">
+            <div class="comment-avatar" data-initial="A"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Ana Ruiz</p>
+              <p>Información muy valiosa</p>
+              <div class="col-12 col-md-6">
+                <a href="#Proteínas Vegetales">
+                  <p> Proteínas Vegetales: Guía Completa para Deportistas</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="entrenamiento">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/recuperacion-muscular.jpg" alt="Recuperación Muscular">
-          </div>
-          <div class="post-content">
-            <h2>Recuperación Muscular: Estrategias Profesionales</h2>
-            <div class="post-meta">
-              <span class="author">Ana Martínez</span>
-              <span class="date">18 Jul 2025</span>
-              <span class="tag">Entrenamiento</span>
-            </div>
-            <p>Técnicas avanzadas para una recuperación muscular más rápida y efectiva...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="P"></div>
-              <div class="comment-content">
-                <p>Consejos muy útiles para mi entrenamiento</p>
+          <div class="comment container" data-category="entrenamiento">
+            <div class="comment-avatar" data-initial="P"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Pedro López</p>
+              <p>Consejos muy útiles para mi entrenamiento</p>
+              <div class="col-12 col-md-6">
+                <a href="#Recuperación Muscular">
+                  <p> Recuperación Muscular: Estrategias Profesionales</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="bienestar">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/psicologia-del-deporte.jpg" alt="Psicología del Deporte">
-          </div>
-          <div class="post-content">
-            <h2>Psicología del Deporte: Equilibrio Mental para Deportistas</h2>
-            <div class="post-meta">
-              <span class="author">Roberto García</span>
-              <span class="date">03 Ago 2025</span>
-              <span class="tag">Bienestar</span>
-            </div>
-            <p>Descubre cómo la psicología del deporte puede mejorar tu rendimiento...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="L"></div>
-              <div class="comment-content">
-                <p>Me ha ayudado mucho a controlar mi ansiedad</p>
+          <div class="comment container" data-category="bienestar">
+            <div class="comment-avatar" data-initial="L"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Laura Fernández</p>
+              <p>Me ha ayudado mucho a controlar mi ansiedad</p>
+              <div class="col-12 col-md-6">
+                <a href="#Psicología del Deporte">
+                  <p> Psicología del Deporte: Equilibrio Mental para Deportistas</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="nutricion">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/suplementacion-deportiva.jpg" alt="Suplementación Deportiva">
-          </div>
-          <div class="post-content">
-            <h2>Guía Completa de Suplementación Deportiva Saludable</h2>
-            <div class="post-meta">
-              <span class="author">Diego López</span>
-              <span class="date">20 Sep 2025</span>
-              <span class="tag">Nutrición</span>
-            </div>
-            <p>Descubre los suplementos más efectivos para potenciar tu rendimiento...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="M"></div>
-              <div class="comment-content">
-                <p>Información muy clara y precisa</p>
+          <div class="comment container" data-category="nutricion">
+            <div class="comment-avatar" data-initial="M"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Miguel Torres</p>
+              <p>Información muy clara y precisa</p>
+              <div class="col-12 col-md-6">
+                <a href="#Suplementación Deportiva">
+                  <p> Guía Completa de Suplementación Deportiva Saludable</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="entrenamiento">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/crosstraining.jpg" alt="Cross Training">
-          </div>
-          <div class="post-content">
-            <h2>Cross Training: Entrenamiento Funcional Completo</h2>
-            <div class="post-meta">
-              <span class="author">Carlos Ramírez</span>
-              <span class="date">15 Oct 2025</span>
-              <span class="tag">Entrenamiento</span>
-            </div>
-            <p>Mejora tu condición física con entrenamientos multifuncionales...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="J"></div>
-              <div class="comment-content">
-                <p>Un método de entrenamiento revolucionario</p>
+          <div class="comment container" data-category="entrenamiento">
+            <div class="comment-avatar" data-initial="J"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Javier Soto</p>
+              <p>Un método de entrenamiento revolucionario</p>
+              <div class="col-12 col-md-6">
+                <a href="#Cross Training">
+                  <p> Cross Training: Entrenamiento Funcional Completo</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="bienestar">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/descanso.jpg" alt="Importancia del Descanso">
-          </div>
-          <div class="post-content">
-            <h2>El Sueño: Clave del Rendimiento Deportivo</h2>
-            <div class="post-meta">
-              <span class="author">Laura Sánchez</span>
-              <span class="date">07 Nov 2025</span>
-              <span class="tag">Bienestar</span>
-            </div>
-            <p>Cómo optimizar tu descanso para mejorar tu rendimiento físico y mental...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="A"></div>
-              <div class="comment-content">
-                <p>Consejos muy prácticos para dormir mejor</p>
+          <div class="comment container" data-category="bienestar">
+            <div class="comment-avatar" data-initial="A"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Alejandro Díaz</p>
+              <p>Consejos muy prácticos para dormir mejor</p>
+              <div class="col-12 col-md-6">
+                <a href="#El Sueño">
+                  <p> El Sueño: Clave del Rendimiento Deportivo</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="blog-post" data-category="nutricion">
-          <div class="post-thumbnail">
-            <img src="../assets/images/blog/hidratacion.jpg" alt="Hidratación Deportiva">
-          </div>
-          <div class="post-content">
-            <h2>Hidratación: El Secreto del Rendimiento Óptimo</h2>
-            <div class="post-meta">
-              <span class="author">María González</span>
-              <span class="date">22 Dic 2025</span>
-              <span class="tag">Nutrición</span>
-            </div>
-            <p>Estrategias de hidratación para diferentes tipos de entrenamiento...</p>
-            <a href="#" class="read-more">Leer más</a>
-          </div>
-          <div class="post-comments">
-            <div class="comment">
-              <div class="comment-avatar" data-initial="C"></div>
-              <div class="comment-content">
-                <p>Información esencial para todo deportista</p>
+          <div class="comment container" data-category="nutricion">
+            <div class="comment-avatar" data-initial="C"></div>
+            <div class="comment-content row">
+              <p class="comment-author">Carolina Méndez</p>
+              <p>Información esencial para todo deportista</p>
+              <div class="col-12 col-md-6">
+                <a href="#Hidratación">
+                  <p> Hidratación: El Secreto del Rendimiento Óptimo</p>
+                </a>
+              </div>
+              <div class="comment-actions  text-center  col-12 col-md-6">
+                <button class="btn btn-sm btn-outline-primary btn-reply">Responder</button>
+                <button class="btn btn-sm btn-outline-warning btn-highlight">Destacar</button>
               </div>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </main>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const blogPage = document.querySelector('.blog-page');
-
-        filterButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            // Remover clase activa de todos los botones
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-
-            // Agregar clase activa al botón clickeado
-            button.classList.add('active');
-
-            // Remover todas las clases de filtro
-            blogPage.classList.remove('filter-nutricion', 'filter-entrenamiento', 'filter-bienestar');
-
-            // Agregar clase de filtro si no es "Todos"
-            const category = button.getAttribute('data-category');
-            if (category !== 'all') {
-              blogPage.classList.add(`filter-${category}`);
-            }
-          });
-        });
-      });
-    </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const reveals = document.querySelectorAll('.blog-post');
-
-        const observerOptions = {
-          root: null,
-          rootMargin: '0px',
-          threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('active');
-            }
-          });
-        }, observerOptions);
-
-        reveals.forEach(reveal => {
-          observer.observe(reveal);
-        });
-      });
-    </script>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-light pt-5 pb-3 mt-5">
@@ -444,11 +491,13 @@
 
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/blog.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
     <script src="../js/darkmode.js"></script>
+
   </body>
 
 </html>
