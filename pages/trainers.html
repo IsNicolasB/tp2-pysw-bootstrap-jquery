@@ -202,63 +202,66 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-grid">
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row g-4 text-center">
           <!-- Newsletter Section -->
-          <div class="footer-section">
-            <h3>Suscríbete al Newsletter</h3>
+          <div class="col-12 col-md-4">
+            <h3 class="h5 mb-3">Suscríbete al Newsletter</h3>
             <p>Recibe las últimas novedades y ofertas especiales directamente en tu correo.</p>
-            <form class="newsletter-form" id="newsletter-form">
-              <div class="form-group">
-                <input type="email" placeholder="Tu correo electrónico" required>
-                <button type="submit">Suscribirse</button>
+            <form class="needs-validation" id="newsletter-form" novalidate autocomplete="off">
+              <div class="mb-3 position-relative">
+                <input type="email" class="form-control" id="newsletter-email" name="email"
+                  placeholder="Tu correo electrónico" required>
+                <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+                <div class="valid-feedback">¡Perfecto!</div>
               </div>
+              <button type="submit" class="btn cta-button w-100 d-flex align-items-center justify-content-center"
+                id="newsletter-submit">
+                <span class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"
+                  id="newsletter-spinner"></span>
+                Suscribirse
+              </button>
             </form>
           </div>
-
           <!-- Contact & Social Section -->
-          <div class="footer-section">
-            <h3>Síguenos en Redes</h3>
-            <div class="social-links">
-              <a href="#" class="social-link">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="fab fa-youtube"></i>
-              </a>
+          <div class="col-12 col-md-4">
+            <h3 class="h5 mb-3">Síguenos en Redes</h3>
+            <div class="mb-3 d-flex gap-2 flex-wrap justify-content-center">
+              <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 social-link" aria-label="Facebook"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 social-link" aria-label="Instagram"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 social-link" aria-label="Twitter"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-circle social-link" aria-label="YouTube"><i
+                  class="fab fa-youtube"></i></a>
             </div>
-            <div class="contact-info">
-              <p><i class="fas fa-phone"></i> +54 (11) 1234-5678</p>
-              <p><i class="fas fa-envelope"></i> info@gymtop.com</p>
-              <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Springfield</p>
+            <div class="contact-info small">
+              <p class="mb-1"><i class="fas fa-phone me-2"></i>+54 (11) 1234-5678</p>
+              <p class="mb-1"><i class="fas fa-envelope me-2"></i>contact@fitpro.com</p>
+              <p><i class="fas fa-map-marker-alt me-2"></i>Av. Siempreviva 742, Springfield</p>
             </div>
           </div>
-
           <!-- Map Section -->
-          <div class="footer-section map-section">
-            <h3>Encóntranos</h3>
-            <div class="map-container">
+          <div class="col-12 col-md-4">
+            <h3 class="h5 mb-3">Encóntranos</h3>
+            <div class="ratio ratio-4x3 rounded overflow-hidden border border-secondary">
               <iframe
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38752,-34.60376,-58.37752,-34.59376&layer=mapnik"
-                width="100%" height="250" frameborder="0" style="border: 1px solid #ccc">
-              </iframe>
+                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                style="border:0; width:100%; height:100%;"></iframe>
             </div>
           </div>
         </div>
-
-        <!-- Copyright -->
-        <div class="footer-bottom">
-          <p>&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
+        <hr class="border-secondary my-4">
+        <div class="text-center small">
+          <p class="mb-0">&copy; 2025 GYMTOP. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
+
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/footer.js"></script>
