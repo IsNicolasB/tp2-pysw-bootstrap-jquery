@@ -106,6 +106,15 @@ header {
     color: var(--primary-color) !important;
 }
 
+.navbar-toggler.collapsed{
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+}
+
+.navbar-toggler:hover{
+    background-color: var(--primary-color);
+}
+
 .dropdown-menu.right{
     left : auto;
     right: 0;
@@ -134,6 +143,10 @@ header {
     padding-right: 2rem;
     padding-left: 0rem;
     font-weight: bold;
+}
+
+.nav-link.dropdown-toggle{
+    text-align: right;
 }
 
 /* Hero Section */
