@@ -13,167 +13,144 @@
 
 <body>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center" href="../index.html">
-            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" width="50" height="30" class="me-2">
-              <g class="logo-barbell">
-                <!-- Barra central -->
-                <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" width="50" height="30" class="me-2">
+            <g class="logo-barbell">
+              <!-- Barra central -->
+              <rect class="logo-bar" x="10" y="22" width="80" height="6" rx="3" />
 
-                <!-- Disco izquierdo -->
-                <g transform="translate(5, 0)">
-                  <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
-                  <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
-                    stroke-width="2" />
-                </g>
-
-                <!-- Disco derecho -->
-                <g transform="translate(-5, 0)">
-                  <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
-                  <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
-                    stroke-width="2" />
-                </g>
+              <!-- Disco izquierdo -->
+              <g transform="translate(5, 0)">
+                <rect class="logo-plate" x="5" y="13" width="24" height="24" rx="4" />
+                <rect class="logo-weight" x="8" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                  stroke-width="2" />
               </g>
-            </svg>
-            <span class="logo-text">FITPRO</span>
-          </a>
 
-          <!-- Botón de Modo Oscuro -->
-          <div class="d-flex align-items-center ms-auto px-4">
-            <button class="btn btn-outline-secondary dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
-              <i class="fas fa-moon"></i>
-            </button>
-          </div>
+              <!-- Disco derecho -->
+              <g transform="translate(-5, 0)">
+                <rect class="logo-plate" x="71" y="13" width="24" height="24" rx="4" />
+                <rect class="logo-weight" x="74" y="16" width="18" height="18" rx="2" fill="white" stroke="#ff6b00"
+                  stroke-width="2" />
+              </g>
+            </g>
+          </svg>
+          <span class="logo-text">FITPRO</span>
+        </a>
 
-          <!-- Botón de Toggle para móviles -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <!-- Botón de Modo Oscuro -->
+        <div class="d-flex align-items-center ms-auto px-4">
+          <button class="btn btn-outline-secondary dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">
+            <i class="fas fa-moon"></i>
           </button>
-
-          <!-- Menú de Navegación -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto px-4">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Menú
-                </a>
-                <ul class="dropdown-menu right ps-2" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="classes.html">Clases</a></li>
-                  <li><a class="dropdown-item" href="trainers.html">Nuestro Equipo</a></li>
-                  <li><a class="dropdown-item" href="pricing.html">Planes y Precios</a></li>
-                  <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
-                  <li><a class="dropdown-item" href="blog.html">Blog de Fitness</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="pricing-page">
-      <section class="pricing-header">
-        <h1>Elige tu Plan Perfecto</h1>
-        <div class="pricing-toggle">
-          <input type="radio" id="monthly" name="pricing" checked>
-          <label for="monthly">Mensual</label>
-          <input type="radio" id="annual" name="pricing">
-          <label for="annual">Anual</label>
-        </div>
-      </section>
-
-      <section class="pricing-plans" id="planes-mensuales">
-        <div class="plan">
-          <div class="plan-inner">
-            <h2>Plan Básico</h2>
-            <div class="plan-price monthly-price">$29.99/mes</div>
-            <div class="plan-price annual-price">$299.99/año</div>
-            <ul class="plan-features">
-              <li>
-                <i class="fas fa-check"></i> Acceso a Gimnasio
-                <span class="tooltip">Entrada ilimitada durante horario de atención</span>
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Clases Grupales Básicas
-                <span class="tooltip">Incluye clases de yoga y stretching</span>
-              </li>
-              <li>
-                <i class="fas fa-times"></i> Entrenador Personal
-                <span class="tooltip">No incluido en este plan</span>
-              </li>
-              <li>
-                <i class="fas fa-times"></i> Nutrición Personalizada
-                <span class="tooltip">No incluido en este plan</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="plan-cta">COMENZAR</a>
-          </div>
         </div>
 
-        <div class="plan recommended">
-          <div class="plan-inner">
-            <div class="plan-badge">Popular</div>
-            <h2>Plan Premium</h2>
-            <div class="plan-price monthly-price">$59.99/mes</div>
-            <div class="plan-price annual-price">$599.99/año</div>
-            <ul class="plan-features">
-              <li>
-                <i class="fas fa-check"></i> Acceso a Gimnasio
-                <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Todas las Clases Grupales
-                <span class="tooltip">Incluye CrossFit, Spinning, Yoga, etc.</span>
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Entrenador Personal
-                <span class="tooltip">2 sesiones mensuales con entrenador</span>
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Nutrición Personalizada
-                <span class="tooltip">Plan nutricional adaptado a tus objetivos</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="plan-cta">COMENZAR</a>
-          </div>
-        </div>
+        <!-- Botón de Toggle para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="plan">
-          <div class="plan-inner">
-            <h2>Plan Intensivo</h2>
-            <div class="plan-price monthly-price">$79.99/mes</div>
-            <div class="plan-price annual-price">$799.99/año</div>
-            <ul class="plan-features">
-              <li>
-                <i class="fas fa-check"></i> Acceso a Gimnasio
-                <span class="tooltip">Entrada 24/7 a todas las instalaciones</span>
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Todas las Clases Grupales
-                <span class="tooltip">Incluye clases especializadas y avanzadas</span>
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Entrenador Personal Ilimitado
-                <span class="tooltip">Sesiones ilimitadas con entrenadores especializados</span>
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Nutrición y Suplementación
-                <span class="tooltip">Plan nutricional avanzado y suplementos incluidos</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="plan-cta">COMENZAR</a>
-          </div>
+        <!-- Menú de Navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto px-4">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menú
+              </a>
+              <ul class="dropdown-menu right ps-2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="classes.html">Clases</a></li>
+                <li><a class="dropdown-item" href="trainers.html">Nuestro Equipo</a></li>
+                <li><a class="dropdown-item" href="pricing.html">Planes y Precios</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="blog.html">Blog de Fitness</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </section>
-    </main>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Footer -->
+  <main class="pricing-page container py-5">
+    <section class="pricing-header mb-4 text-center">
+      <h1>Elige tu Plan Perfecto</h1>
+      <div class="btn-group btn-group-toggle pricing-toggle mt-3 " data-bs-toggle="buttons">
+        <input type="radio" class="btn-check" name="pricing-toggle" id="monthly" autocomplete="off" checked>
+        <label class="btn " for="monthly">Mensual</label>
+        <input type="radio" class="btn-check" name="pricing-toggle" id="annual" autocomplete="off">
+        <label class="btn " for="annual">Anual</label>
+      </div>
+    </section>
+
+    <section class="pricing-table-section">
+      <div class="table-responsive">
+        <table class="table table-hover text-center align-middle" id="pricing-table">
+          <thead class="table-dark">
+            <tr>
+              <th></th>
+              <th>Plan Básico</th>
+              <th>Plan Premium <span class="badge bg-warning text-dark">Popular</span></th>
+              <th>Plan Intensivo</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr>
+              <th>Precio</th>
+              <td>
+                <span class="monthly-price">$29.99/mes</span>
+                <span class="annual-price">$299.99/año</span>
+              </td>
+              <td>
+                <span class="monthly-price">$59.99/mes</span>
+                <span class="annual-price">$599.99/año</span>
+              </td>
+              <td>
+                <span class="monthly-price">$79.99/mes</span>
+                <span class="annual-price ">$799.99/año</span>
+              </td>
+            </tr>
+            <tr>
+              <th>Acceso a Gimnasio <i class="fas fa-info-circle text-secondary" data-bs-toggle="tooltip" title="Básico: Entrada ilimitada durante horario de atención. Premium/Intensivo: 24/7 a todas las instalaciones."></i></th>
+              <td><i class="fas fa-check text-success"></i></td>
+              <td><i class="fas fa-check text-success"></i></td>
+              <td><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+              <th>Clases Grupales <i class="fas fa-info-circle text-secondary" data-bs-toggle="tooltip" title="Básico: Yoga y stretching. Premium: Todas las clases. Intensivo: Clases especializadas y avanzadas."></i></th>
+              <td><i class="fas fa-check text-success"></i> Básicas</td>
+              <td><i class="fas fa-check text-success"></i> Todas</td>
+              <td><i class="fas fa-check text-success"></i> Avanzadas</td>
+            </tr>
+            <tr>
+              <th>Entrenador Personal <i class="fas fa-info-circle text-secondary" data-bs-toggle="tooltip" title="Básico: No incluido. Premium: 2 sesiones mensuales. Intensivo: Ilimitado."></i></th>
+              <td><i class="fas fa-times text-danger"></i></td>
+              <td><i class="fas fa-check text-success"></i> 2/mes</td>
+              <td><i class="fas fa-check text-success"></i> Ilimitado</td>
+            </tr>
+            <tr>
+              <th>Nutrición <i class="fas fa-info-circle text-secondary" data-bs-toggle="tooltip" title="Básico: No incluido. Premium: Plan personalizado. Intensivo: Nutrición avanzada y suplementos."></i></th>
+              <td><i class="fas fa-times text-danger"></i></td>
+              <td><i class="fas fa-check text-success"></i> Personalizada</td>
+              <td><i class="fas fa-check text-success"></i> Avanzada + Suplementos</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td><a href="contact.html" class="btn btn-outline-primary cta-button">COMENZAR</a></td>
+              <td><a href="contact.html" class="btn btn-primary cta-button">COMENZAR</a></td>
+              <td><a href="contact.html" class="btn btn-outline-primary cta-button">COMENZAR</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer bg-dark text-light pt-5 pb-3 mt-5">
     <div class="container">
       <div class="row g-4 text-center">
@@ -232,13 +209,12 @@
       </div>
     </div>
   </footer>
-  
-    <script src="../js/jquery-3.7.1.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/footer.js"></script>
-    <script src="../js/pricing.js"></script>
-    <script src="../js/darkmode.js"></script>
 
-  </body>
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="../js/pricing.js"></script>
+  <script src="../js/darkmode.js"></script>
+</body>
 
 </html>
